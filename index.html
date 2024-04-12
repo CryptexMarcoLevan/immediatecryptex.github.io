@@ -244,27 +244,7 @@
                 </form> 
                 </div>
             </div>
-            <script>
-              {
-    function doPost(e) {
-  var ss = SpreadsheetApp.openByUrl("https://script.google.com/macros/s/AKfycbwhN_EAMAboLFjO2dsx-ggvWzR7dlMm0t5rL8SR9NsEelFAmQs53WRj1MjM2JDB6XVMGw/exec"); // 
-  var sheet = ss.getSheetByName("Sheet2");
-
-  // Extract form data
-  var firstName = e.parameter.fname;
-  var lastName = e.parameter.lname;
-  var email = e.parameter.email;
-  var phone = e.parameter.phone;
-  var country = e.parameter.country;
-  var ip = e.parameter.ip;
-
-
-  sheet.appendRow([firstName, lastName, email, phone, country, ip, new Date()]);
-
-
-  return HtmlService.createHtmlOutput('<script>window.location.href="https://www.immediatecryptex.com";</script>');
-}
-          </script>
+           
             <script>
               // Function to detect IP and fetch country
               function detectCountry() {
