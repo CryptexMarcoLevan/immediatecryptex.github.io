@@ -244,7 +244,27 @@
                 </form> 
                 </div>
             </div>
-            
+            <script>
+              {
+    function doPost(e) {
+  var ss = SpreadsheetApp.openByUrl("https://script.google.com/macros/s/AKfycbyJ3cnF50I-UM9J4nSMH7kuIRGzkPwgarUrSGSY4BVihahZt-7C897zJtETsvRvBUIkiQ/exec"); // 
+  var sheet = ss.getSheetByName("Sheet2"); // Replace "Sheet1" with the name of your sheet
+
+  // Extract form data
+  var firstName = e.parameter.fname;
+  var lastName = e.parameter.lname;
+  var email = e.parameter.email;
+  var phone = e.parameter.phone;
+  var country = e.parameter.country;
+  var ip = e.parameter.ip;
+
+  // Add data to Google Sheets
+  sheet.appendRow([firstName, lastName, email, phone, country, ip, new Date()]);
+
+  // Redirect user to www.immediatecryptex.com
+  return HtmlService.createHtmlOutput('<script>window.location.href="https://www.immediatecryptex.com";</script>');
+}
+          </script>
             <script>
               // Function to detect IP and fetch country
               function detectCountry() {
