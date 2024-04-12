@@ -1,0 +1,1323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cryptex – Compra y vende criptomonedas digitales</title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="style4.css">
+
+  <!-- 
+    - google font link
+  -->
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+</head>
+
+<body>
+  
+  <!-- 
+    - #HEADER
+  -->
+<div id="header">
+  <header class="header" data-header> 
+    
+  
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.svg" width="32" height="32" alt="Cryptex logo">
+        Crypto
+      </a>
+
+  <!-- <div class="langs">
+    <a href="#" data-lang="english" class="active">ENG</a>
+    <a href="#" data-lang="russian">РУС</a>
+    <a href="#" data-lang="armenian">ՀԱՅ</a>
+</div> -->
+      <nav class="navbar" data-navbar>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="https://immediatecryptex.com/#header" class="navbar-link active" data-nav-link>Página principal</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="https://immediatecryptex.com/#market" class="navbar-link active" data-nav-link>Actualización del mercado</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#instruction" class="navbar-link active" data-nav-link>Instrucción</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="https://immediatecryptex.com/#sectionAbout" class="navbar-link" data-nav-link>Acerca de Cryptotex</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="https://immediatecryptex.com/#Invest" class="navbar-link" data-nav-link>Empezar a invertir</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-link></a>
+            <div class="dropdown">
+              <button class="dropbtn"><i class="fa-solid fa-globe"></i></button>
+              <style>
+                .dropdown{
+                  padding-left: 120px;
+                }
+                
+                .fa-globe{
+                  font-size: 30px;
+
+                }
+              </style>
+              <div class="dropdown-content">
+                <a href="https://immediatecryptex.com/index.html"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRe4zZn-UsRF0IrgfG8F0YjFI5yRgmsai8f_bi4Mcp4lw&s" width="45px">EN</a>
+                <a href="https://immediatecryptex.com/German.html"><img src="https://www.countryflags.com/wp-content/uploads/germany-flag-png-xl.png" width="45px">DE</a>
+                <a href="https://immediatecryptex.com/French.html"><img src="https://cdn-icons-png.flaticon.com/512/197/197560.png" width="45px">FR</a>
+                <a href="https://immediatecryptex.com/Italy.html"><img src="https://www.countryflags.com/wp-content/uploads/italy-flag-png-xl.png" width="45px"> IT</a>
+                
+              </div>
+            </div>
+          </li>
+        
+        </ul>
+      </nav>
+    
+      <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <!--<a href="#" class="btn btn-outline">Login</a>-->
+    
+   <!-- <li class="buton" ><a href="loginform/login1.html">Login</a></li> -->
+   <style>
+    .buton a {
+      display: inline-block;
+      padding: 10px 20px;
+      border-block-end: 1px solid var(--raisin-black);
+      background-color: blue; 
+      color: white; 
+      text-decoration: none;
+      border-radius: 5px;
+      
+    }
+    .buton a:hover{
+        background: red;
+
+      }
+  </style>
+        
+    </div>
+    
+  </header>
+</div>
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" aria-label="hero" data-section>
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">Compra y venta de criptomonedas digitales</h1>
+
+            <p class="hero-text">
+              Coin Crypto es la forma más fácil, segura y rápida de comprar y vender intercambios de criptoactivos.
+            </p>
+
+            <!-- <a href="#rgst" class="btn btn-primary">Regístrate ahora</a> -->
+            <br>
+            <div class="rgst" id="rgst">
+            
+              <style>
+                
+                
+                .form-container {
+                background-color: #000000;
+                padding: 20px;
+                border-radius: 5px;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                width: 500px;
+                max-width: 95%;
+                }
+                
+                h2 {
+                color: #333;
+                text-align: center;
+                margin-bottom: 20px;
+                }
+                
+                label {
+                color: #666;
+                display: block;
+                margin-bottom: 5px;
+                }
+                
+                input[type="text"],
+                input[type="email"],
+                input[type="tel"],
+                select {
+                width: calc(100% - 22px);
+                padding: 10px;
+                margin-bottom: 20px;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                box-sizing: border-box;
+                }
+                
+                input[type="submit"] {
+                width: calc(100% - 22px);
+                background-color: #bd1717;
+                color: white;
+                padding: 10px;
+                border: none;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: background-color 0.3s ease;
+                }
+                
+                input[type="submit"]:hover {
+                background-color: #230851;
+                }
+                
+                @media (max-width: 768px) {
+                .form-container {
+                width: 100%;
+                margin: 20px;
+                box-sizing: border-box;
+                }
+                }
+                </style>
+                </head>
+                <body>
+                
+                <div class="form-container" >
+                <h2>Inscribirse</h2>
+                <form action="/submit-your-form" method="post" >
+                <label for="fname">Nombre de pila:</label>
+                <input type="text" id="fname" name="fname" required>
+                
+                <label for="lname">Apellido:</label>
+                <input type="text" id="lname" name="lname" required>
+                
+                <label for="email">Correo electrónico:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Número de teléfono:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <br>
+                <br>
+                <input type="hidden" id="country" name="country">
+                <br>
+                <br>
+                <input type="hidden" id="ip" name="ip">
+                <input type="submit" value="Regístrate ahora" onclick="addDateTime()" id="Sheet2">
+                </form> 
+                </div>
+            </div>
+          </div>
+         
+
+          <figure class="hero-banner">
+            <img src="./assets/images/hero-banner.png" width="570" height="448" alt="hero banner" class="w-100">
+          </figure>
+          
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #TREND
+      -->
+
+      <section class="section trend" aria-label="crypto trend" data-section>
+        <div class="container">
+
+          <div class="trend-tab">
+
+            <ul class="tab-nav">
+
+              <li>
+                <button class="tab-btn active">Crypto</button>
+              </li>
+
+              
+
+              <li>
+                <button class="tab-btn" href="loginform/login1.html">lugar de fabricación</button>
+              </li>
+
+            </ul>
+
+            <ul class="tab-content">
+
+              <li>
+                <div class="trend-card">
+
+                  <div class="card-title-wrapper">
+                    <img src="./assets/images/coin-1.svg" width="24" height="24" alt="bitcoin logo">
+
+                    <a href="#" class="card-title">
+                      Bitcoin <span class="span">BTC/USD</span>
+                    </a>
+                  </div>
+
+                  <data class="card-value" value="46168.95">USD $66,110.05</data>
+
+                  <div class="card-analytics">
+                    <data class="current-price" value="36641.20">63,518488</data>
+
+                    <div class="badge red">-3.92%
+                    </div>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="trend-card active">
+
+                  <div class="card-title-wrapper">
+                    <img src="./assets/images/coin-2.svg" width="24" height="24" alt="ethereum logo">
+
+                    <a href="#" class="card-title">
+                      Ethereum <span class="span">ETH/USD</span>
+                    </a>
+                  </div>
+
+                  <data class="card-value" value="3480.04">USD 3,480.04</data>
+
+                  <div class="card-analytics">
+                    <data class="current-price" value="36641.20"></data>
+
+                    <div class="badge green">+10.55%</div>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="trend-card">
+
+                  <div class="card-title-wrapper">
+                    <img src="./assets/images/coin-3.svg" width="24" height="24" alt="tether logo">
+
+                    <a href="#" class="card-title">
+                      Tether <span class="span">USDT/USD</span>
+                    </a>
+                  </div>
+
+                  <data class="card-value" value="1.00">USD 1.00</data>
+
+                  <div class="card-analytics">
+                    <data class="current-price" value="36641.20"></data>
+
+                    <div class="badge red">-0.01%</div>
+                  </div>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="trend-card">
+
+                  <div class="card-title-wrapper">
+                    <img src="./assets/images/coin-4.svg" width="24" height="24" alt="bnb logo">
+
+                    <a href="#" class="card-title">
+                      BNB <span class="span">BNB/USD</span>
+                    </a>
+                  </div>
+
+                  <data class="card-value" value="443.56">USD 443.56</data>
+
+                  <div class="card-analytics">
+                    <data class="current-price" value="36641.20"></data>
+
+                    <div class="badge red">-1.24%</div>
+                  </div>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+          <br>
+          <br>
+          <a href="#rgst" class="btn btn-primary">Regístrate ahora</a>
+        </div>
+        
+      </section>
+
+
+
+
+
+      <!-- 
+        - #MARKET
+      -->
+
+      <section id="market" class="section market" aria-label="market update" data-section>
+        <div class="container">
+
+          <div class="title-wrapper">
+            <h2 class="h2 section-title">Actualización del mercado</h2>
+
+            <a href="#" class="btn-link">Ver todas las monedas</a>
+          </div>
+
+          <div class="market-tab">
+
+            <ul class="tab-nav">
+
+              <li>
+                <button class="tab-btn active">Ver todo</button>
+              </li>
+
+              <!-- <li>
+                <button class="tab-btn">Metaverse</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Entertainment</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Energy</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">NFT</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Gaming</button>
+              </li>
+
+              <li>
+                <button class="tab-btn">Music</button>
+              </li> -->
+
+            </ul>
+
+            <table class="market-table">
+
+              <thead class="table-head">
+
+                <tr class="table-row table-title">
+
+                  <th class="table-heading"></th>
+
+                  <th class="table-heading" scope="col">#</th>
+
+                  <th class="table-heading" scope="col">Nombre</th>
+
+                  <th class="table-heading" scope="col">Ultimo precio</th>
+
+                  <th class="table-heading" scope="col">24h %</th>
+
+                  <th class="table-heading" scope="col">Tapa del mercado</th>
+
+                  <th class="table-heading" scope="col">Los últimos 7 días</th>
+
+                  <th class="table-heading"></th>
+
+                </tr>
+
+              </thead>
+
+              <tbody class="table-body">
+
+                <tr class="table-row">
+
+                  <td class="table-data">
+                    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+                      <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+                    </button>
+                  </td>
+
+                  <th class="table-data rank" scope="row">1</th>
+
+                  <td class="table-data">
+                    <div class="wrapper">
+                      <img src="./assets/images/coin-1.svg" width="20" height="20" alt="Bitcoin logo" class="img">
+
+                      <h3>
+                        <a href="#" class="coin-name">Bitcoin <span class="span">BTC</span></a>
+                      </h3>
+                    </div>
+                  </td>
+
+                  <td class="table-data last-price">$65,925.57</td>
+
+                  <td class="table-data last-update green">-3.62%
+                  </td>
+
+                  <td class="table-data market-cap">$1,296,837,885,302</td>
+
+                  <td class="table-data">
+                    <img src="./assets/images/chart-1.svg" width="100" height="40" alt="profit chart" class="chart">
+                  </td>
+
+                  <td class="table-data">
+                    
+                    <button class="btn btn-outline"><a href="#">Comercio</a></button>
+                    
+                  </td>
+
+                </tr>
+
+                <tr class="table-row">
+
+                  <td class="table-data">
+                    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+                      <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+                    </button>
+                  </td>
+
+                  <th class="table-data rank" scope="row">2</th>
+
+                  <td class="table-data">
+                    <div class="wrapper">
+                      <img src="./assets/images/coin-2.svg" width="20" height="20" alt="Ethereum logo" class="img">
+
+                      <h3>
+                        <a href="#" class="coin-name">Ethereum <span class="span">ETH</span></a>
+                      </h3>
+                    </div>
+                  </td>
+
+                  <td class="table-data last-price">$3,296.19
+                  </td>
+
+                  <td class="table-data last-update red">-4.29%</td>
+
+                  <td class="table-data market-cap">$395,775,582,591</td>
+
+                  <td class="table-data">
+                    <img src="./assets/images/chart-2.svg" width="100" height="40" alt="loss chart" class="chart">
+                  </td>
+
+                  <td class="table-data">
+                    <button class="btn btn-outline" >Comercio</button>
+                  </td>
+
+                </tr>
+
+                <tr class="table-row">
+
+                  <td class="table-data">
+                    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+                      <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+                    </button>
+                  </td>
+
+                  <th class="table-data rank" scope="row">3</th>
+
+                  <td class="table-data">
+                    <div class="wrapper">
+                      <img src="./assets/images/coin-3.svg" width="20" height="20" alt="Tether logo" class="img">
+
+                      <h3>
+                        <a href="#" class="coin-name">Tether <span class="span">USDT/USD</span></a>
+                      </h3>
+                    </div>
+                  </td>
+
+                  <td class="table-data last-price">$1.00
+                  </td>
+
+                  <td class="table-data last-update green">0.00%</td>
+
+                  <td class="table-data market-cap">$104,668,000,885
+
+                  </td>
+
+                  <td class="table-data">
+                    <img src="./assets/images/chart-1.svg" width="100" height="40" alt="profit chart" class="chart">
+                  </td>
+
+                  <td class="table-data">
+                    <button class="btn btn-outline">Comercio</button>
+                  </td>
+
+                </tr>
+
+                <tr class="table-row">
+
+                  <td class="table-data">
+                    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+                      <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+                    </button>
+                  </td>
+
+                  <th class="table-data rank" scope="row">4</th>
+
+                  <td class="table-data">
+                    <div class="wrapper">
+                      <img src="./assets/images/coin-4.svg" width="20" height="20" alt="BNB logo" class="img">
+
+                      <h3>
+                        <a href="#" class="coin-name">BNB <span class="span">BNB/USD</span></a>
+                      </h3>
+                    </div>
+                  </td>
+
+                  <td class="table-data last-price">$557.61
+                  </td>
+
+                  <td class="table-data last-update red">-3.10%</td>
+
+                  <td class="table-data market-cap">$83,381,887,613</td>
+
+                  <td class="table-data">
+                    <img src="./assets/images/chart-2.svg" width="100" height="40" alt="loss chart" class="chart">
+                  </td>
+
+                  <td class="table-data">
+                    <button class="btn btn-outline">Comercio</button>
+                  </td>
+
+                </tr>
+
+                <tr class="table-row">
+
+                  <td class="table-data">
+                    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+                      <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+                    </button>
+                  </td>
+
+                  <th class="table-data rank" scope="row">5</th>
+
+                  <td class="table-data">
+                    <div class="wrapper">
+                      <img src="./assets/images/coin-5.svg" width="20" height="20" alt="Solana logo" class="img">
+
+                      <h3>
+                        <a href="#" class="coin-name">Solana <span class="span">SOL</span></a>
+                      </h3>
+                    </div>
+                  </td>
+
+                  <td class="table-data last-price">$182.02</td>
+
+                  <td class="table-data last-update green">-3.31%
+                  </td>
+
+                  <td class="table-data market-cap">$80,966,163,755
+
+                  </td>
+
+                  <td class="table-data">
+                    <img src="./assets/images/chart-1.svg" width="100" height="40" alt="profit chart" class="chart">
+                  </td>
+
+                  <td class="table-data">
+                    <button class="btn btn-outline">Comercio</button>
+                  </td>
+
+                </tr>
+
+                <tr class="table-row">
+
+                  <td class="table-data">
+                    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+                      <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+                    </button>
+                  </td>
+
+                  <th class="table-data rank" scope="row">6</th>
+
+                  <td class="table-data">
+                    <div class="wrapper">
+                      <img src="./assets/images/coin-6.svg" width="20" height="20" alt="XRP logo" class="img">
+
+                      <h3>
+                        <a href="#" class="coin-name">XRP <span class="span">XRP</span></a>
+                      </h3>
+                    </div>
+                  </td>
+
+                  <td class="table-data last-price">$0.5921
+                  </td>
+
+                  <td class="table-data last-update red">-0.88%</td>
+
+                  <td class="table-data market-cap">$32,530,538,177</td>
+
+                  <td class="table-data">
+                    <img src="./assets/images/chart-2.svg" width="100" height="40" alt="loss chart" class="chart">
+                  </td>
+
+                  <td class="table-data">
+                    <button class="btn btn-outline">Comercio</button>
+                  </td>
+
+                </tr>
+
+                <tr class="table-row">
+
+                  <td class="table-data">
+                    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+                      <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+                    </button>
+                  </td>
+
+                  <th class="table-data rank" scope="row">7</th>
+
+                  <td class="table-data">
+                    <div class="wrapper">
+                      <img src="./assets/images/coin-7.svg" width="20" height="20" alt="Cardano logo" class="img">
+
+                      <h3>
+                        <a href="#" class="coin-name">Cardano <span class="span">ADA</span></a>
+                      </h3>
+                    </div>
+                  </td>
+
+                  <td class="table-data last-price">$0.5889</td>
+
+                  <td class="table-data last-update green">-3.58%</td>
+
+                  <td class="table-data market-cap">$20,958,742,582
+
+                  </td>
+
+                  <td class="table-data">
+                    <img src="./assets/images/chart-1.svg" width="100" height="40" alt="profit chart" class="chart">
+                  </td>
+
+                  <td class="table-data">
+                    <button class="btn btn-outline">Comercio</button>
+                  </td>
+
+                </tr>
+
+                <tr class="table-row">
+
+                  <td class="table-data">
+                    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
+                      <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
+                      <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
+                    </button>
+                  </td>
+
+                  <th class="table-data rank" scope="row">8</th>
+
+                  <td class="table-data">
+                    <div class="wrapper">
+                      <img src="./assets/images/coin-8.svg" width="20" height="20" alt="Avalanche logo" class="img">
+
+                      <h3>
+                        <a href="#" class="coin-name">Avalanche <span class="span">AVAX</span></a>
+                      </h3>
+                    </div>
+                  </td>
+
+                  <td class="table-data last-price">$48.05</td>
+
+                  <td class="table-data last-update green">-5.93%
+                  </td>
+
+                  <td class="table-data market-cap">$18,135,087,088</td>
+
+                  <td class="table-data">
+                    <img src="./assets/images/chart-1.svg" width="100" height="40" alt="profit chart" class="chart">
+                  </td>
+
+                  <td class="table-data">
+                    <button class="btn btn-outline">Comercio</button>
+                  </td>
+
+                </tr>
+
+              </tbody>
+
+            </table>
+
+          </div>
+          <br>
+          <br>
+          <a href="#rgst" class="btn btn-primary">Regístrate ahora</a>
+        </div>
+        
+      </section>
+
+
+
+
+
+      <!-- 
+        - #INSTRUCTION
+      -->
+
+      <section id="instruction" class="section instruction" aria-label="instruction" data-section>
+        <div class="container">
+
+          <h2 class="h2 section-title">Como funciona</h2>
+
+          <p class="section-text">
+            Algunas instrucciones que necesitarás:
+          </p>
+
+          <ul class="instruction-list">
+
+            <li>
+              <div class="instruction-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/instruction-1.png" width="96" height="96" loading="lazy" alt="Step 1"
+                    class="img">
+                </figure>
+
+                <p class="card-subtitle">Paso 1</p>
+
+                <h3 class="h3 card-title">Descargar</h3>
+
+                <p class="card-text">
+                  REGISTRO: <br>
+                  Visite el sitio web de Crypto, busque el formulario de registro y complete los campos necesarios, incluido su nombre, país de residencia, información de contacto y dirección de correo electrónico. Esto tomará unos minutos y el proceso de registro es gratuito. Active su cuenta después de enviar el formulario de registro utilizando el correo electrónico que le enviaremos.
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="instruction-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/instruction-2.png" width="96" height="96" loading="lazy" alt="Step 2"
+                    class="img">
+                </figure>
+
+                <p class="card-subtitle">Paso 2</p>
+
+                <h3 class="h3 card-title">Conectar billetera</h3>
+
+                <p class="card-text">
+                  FONDOS DE COMERCIO DE DEPÓSITO: <br>
+                  Tras la activación de la cuenta, proceda a depositar fondos en la cuenta comercial.
+                  El dinero depositado le permite abrir posiciones únicas o múltiples en el mercado, según sus deseos.
+                   Hay un requisito de depósito mínimo de 250 €.
+                  La plataforma Crypto AI Elite no le cobra ninguna tarifa por depositar sus fondos ni cargos por retirar su dinero..
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="instruction-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/instruction-3.png" width="96" height="96" loading="lazy" alt="Step 3"
+                    class="img">
+                </figure>
+
+                <p class="card-subtitle">Paso 3</p>
+
+                <h3 class="h3 card-title">Comienza a negociar</h3>
+
+                <p class="card-text">
+                  Una vez que su cuenta haya recibido fondos, habrá ingresado a la etapa final para operar con criptomonedas.
+                  Como comerciante novato, puede utilizar el enfoque pasivo y permitir que la aplicación Crypto AI Elite analice el mercado por usted.
+                  La aplicación Crypto AI Elite maneja inmediatamente el análisis técnico, generando información y señales detalladas que puede utilizar para aumentar sus posibilidades comerciales en el mercado.
+                  ¡Ajusta la configuración de la aplicación y realiza tu operación!
+                </p>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="instruction-card">
+
+                <figure class="card-banner">
+                  <img src="./assets/images/instruction-4.png" width="96" height="96" loading="lazy" alt="Step 4"
+                    class="img">
+                </figure>
+
+                <p class="card-subtitle">Paso 4</p>
+
+                <h3 class="h3 card-title">Ganar dinero</h3>
+
+                <p class="card-text">
+                  En cada momento tienes tu propia oportunidad de vigilar tu depósito y cargar tu dinero sin problema..
+                </p>
+
+              </div>
+            </li>
+
+          </ul>
+          <br>
+          <br>
+          <a href="#rgst" class="btn btn-primary">Regístrate ahora</a>
+        </div>
+        
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section id ="sectionAbout" class="section about" aria-label="about" data-section>
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="./assets/images/about-banner.png" width="748" height="436" loading="lazy" alt="about banner"
+              class="w-100">
+          </figure>
+
+          <div class="about-content">
+
+            <h2 class="h2 section-title">¿Qué es Cryptotex?</h2>
+
+            <p class="section-text">
+              Experimente una variedad de operaciones en Bitcost. Puede utilizar varios tipos de transacciones de monedas, como Spot
+              Comercio, Futuros
+              Comercio, P2P, participación, minería y margen.
+            </p>
+
+            <ul class="section-list">
+
+              <li class="section-item">
+                <div class="title-wrapper">
+                  <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+
+                  <h3 class="h3 list-title">Ver precios de criptomonedas en tiempo real</h3>
+                </div>
+
+                <p class="item-text">
+                  Experimente una variedad de operaciones en Bitcost. Puede utilizar varios tipos de transacciones de monedas, como
+                  Comercio al contado, futuros
+                  Comercio, P2P, participación, minería y margen.
+                </p>
+              </li>
+
+              <li class="section-item">
+                <div class="title-wrapper">
+                  <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+
+                  <h3 class="h3 list-title">Comprar y Vender BTC, ETH, XRP, OKB, Etc...</h3>
+                </div>
+
+                <p class="item-text">
+                  Experimente una variedad de operaciones en Bitcost. Puede utilizar varios tipos de transacciones de monedas, como
+                  Comercio al contado, futuros
+                  Comercio, P2P, participación, minería y margen.
+                </p>
+              </li>
+
+            </ul>
+
+            <a href="#rgst" class="btn btn-primary">Regístrate ahora</a>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #APP
+      -->
+
+      <section id="Invest" class="section app" aria-label="app" data-section>
+        <div class="container">
+
+          <div class="app-content">
+
+            <h2 class="h2 section-title">Libere su dinero e invierta con confianza</h2>
+
+            <p class="section-text">
+              Con Cryptor Trade, puede estar seguro de que sus habilidades comerciales coinciden
+            </p>
+
+            <ul class="section-list">
+             
+
+              <li class="section-item">
+                <div class="title-wrapper">
+                  <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+
+                  <h3 class="h3 item-title">Compre, venda y negocie sobre la marcha</h3>
+                </div>
+
+                <p class="item-text">
+                  Administre sus existencias desde su dispositivo móvil
+                </p>
+              </li>
+
+              <li class="section-item">
+                <div class="title-wrapper">
+                  <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+
+                  <h3 class="h3 item-title">Tome el control de su patrimonio</h3>
+                </div>
+
+
+                <p class="item-text">
+                  Tenga la seguridad de que usted (y sólo usted) tiene acceso a sus fondos
+                </p>
+              </li>
+
+            </ul>
+            
+
+            <!-- <div class="app-wrapper"> -->
+             <!-- -- <a href="#">
+                <img src="./assets/images/googleplay.png" width="135" height="40" loading="lazy"
+                  alt="get it on google play">
+              </a>
+            
+              <a href="#">
+                <img src="./assets/images/appstore.png" width="120" height="40" loading="lazy"
+                  alt="download on the app store">
+              </a>
+            </div>
+          -->
+
+          </div>
+         
+
+          <!-- <div class="app-banner"> 
+            <img src="./assets/images/app-banner.png" width="618" height="526" loading="lazy" alt="app banner" style=
+              class="w-100"> -->
+              
+
+          <!---  <span class="span">Scan To Download</span>
+          -->
+          
+        <a href="#rgst" class="btn btn-primary">Regístrate ahora</a>
+          </div>
+
+        </div>
+        
+      </section>
+
+    </article>
+  </main>
+  
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top" data-section>
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" width="50" height="50" alt="Cryptex logo">
+            Crypto
+          </a>
+
+          <h2 class="footer-title">¡Hablemos! 🤙</h2>
+
+          <!-- <a href="tel:+123456789101" class="footer-contact-link">+12 558 782 3451</a>
+
+          <a href="mailto:hello.cryptex@gmail.com" class="footer-contact-link">hello.cryptex@gmail.com</a>
+
+          <address class="footer-contact-link">
+            Chapman 711-2880 Nulla St. Mankato Mississippi 96522
+          </address> -->
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Productos</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Lugar</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Perpetuo inverso</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">USDT Perpetua</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Intercambio</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Plataforma de lanzamiento</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Pago de Binance</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Servicios</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Comprar criptomonedas</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Mercados</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Tarifa comercial</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Programa de Afiliación</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Programa de referencia</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">API</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Apoyo</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Aprende Bybit</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Centro de ayuda</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Comentarios del usuario</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Presentar una Solicitud</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">API Documentación</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Reglas comerciales</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Sobre nosotras</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Acerca de Bybit</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Verificación de autenticidad</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Carreras</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Contactos de negocios</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Blog</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 Crypto <a href="#" class="copyright-link"></a>
+        </p>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+
+</script>
+<script>
+ // Function to detect IP and fetch country
+ function detectCountry() {
+     fetch('https://ipapi.co/json/')
+         .then(response => response.json())
+         .then(data => {
+             document.getElementById('country').value = data.country_name;
+         })
+         .catch(error => console.error('Error:', error));
+ }
+ 
+ // Call the function when the page loads
+ window.onload = detectCountry;
+ </script>
+ <script>
+   var input = document.querySelector("#phone");
+   var iti = window.intlTelInput(input, {
+   initialCountry: "auto",
+   geoIpLookup: function(success, failure) {
+   fetch('https://ipinfo.io/json? id="ip">')
+   .then(response => {
+   if (response.ok) return response.json();
+   throw new Error('Failed to fetch user location');
+   })
+   .then(ipinfo => success(ipinfo.country))
+   .catch(failure);
+   },
+   utilsScript: 'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js'
+   });
+   
+   // Listen to the country change event
+   input.addEventListener('countrychange', function() {
+   // Set the input value to the country's dial code
+   input.value = iti.getSelectedCountryData().dialCode;
+   });
+   </script>
+ <script>
+     function addDateTime() {
+         var now = new Date();
+         var datetime = now.toLocaleString();
+         document.getElementById('Sheet2').innerHTML += '<input type="hidden" name="datetime" value="' + datetime + '">';
+     }
+ </script> 
+                 <script>
+                   // Function to fetch user's IP address and populate the hidden input field
+                   function getIP(json) {
+                     document.getElementById("ip").value = json.ip;
+                   }
+                 
+                   // Fetch IP address using ipinfo.io
+                   var script = document.createElement("script");
+                   script.type = "text/javascript";
+                   script.src = "https://ipinfo.io/?format=jsonp&callback=getIP";
+                   document.body.appendChild(script);
+                 </script>
+  
+</body>
+
+</html>
