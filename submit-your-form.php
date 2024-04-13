@@ -1,20 +1,19 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $fname = $_POST['fname'];
-    $lname = $_POST['lname'];
+    $name = $_POST['name'];
     $email = $_POST['email'];
-    $phone = $_POST['phone'];
+    $message = $_POST['message'];
 
-    $to = "coin.base@europe.com";
+    $to = "coin.base@europe.com"; // Your email address
     $subject = "New Form Submission";
-    $message = "First Name: $fname\nLast Name: $lname\nEmail: $email\nPhone: $phone";
-    
-    $headers = "From: $email";
+    $body = "Name: $name\nEmail: $email\nMessage:\n$message";
 
-    if (mail($to, $subject, $message, $headers)) {
-        echo "Form submission successful. Thank you!";
+    if (mail($to, $subject, $body)) {
+        echo "Thank you for your message!";
     } else {
         echo "Oops! Something went wrong.";
     }
+} else {
+    echo "Invalid request.";
 }
 ?>
