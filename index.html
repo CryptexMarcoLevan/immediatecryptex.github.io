@@ -259,8 +259,19 @@
               // Call the function when the page loads
               window.onload = detectCountry;
               </script>
-         
-        
+         <script>
+        function doPost(e) {
+  try {
+    // Log the received form data
+    Logger.log('Received form data:', e.parameter);
+
+    // Your existing code to process the form data and insert into Google Sheets
+    // ...
+  } catch (error) {
+    Logger.log('Error:', error);
+  }
+}
+</script>
     
           </div>
          
