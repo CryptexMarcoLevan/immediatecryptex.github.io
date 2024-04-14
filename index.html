@@ -221,7 +221,7 @@
                 </head>
                 <body>
                 
-                                   <div class="form-container" >
+                                   <div class="form-container" id="forma" >
                 <h2>Sign Up</h2>
                 <form action="https://api.web3forms.com/submit" method="post" name="Sheet2" >
                   <input type="hidden" name="access_key" value="1b9153cc-7ca7-43cc-b698-ea27919fc683">
@@ -245,13 +245,21 @@
                 </form> 
                 </div>
             </div>
-           <script>document.addEventListener('DOMContentLoaded', (event) => {
-const smallElements = document.querySelectorAll('small');
-smallElements.forEach((el) => {
-if (el.innerHTML.includes('Create your own contact form at')) {
-el.remove();
+           <script>document.getElementById('forma').addEventListener('submit', function(event) {
+// Prevent the default form submission behavior
+event.preventDefault();
+
+// Your form submission logic here
+// ...
+
+// After your form submission logic, remove the <small> element
+const smallElement = document.querySelector('small');
+if (smallElement && smallElement.innerHTML.includes('Create your own contact form at')) {
+smallElement.remove();
 }
-});
+
+// You might want to submit the form programmatically here if needed
+// this.submit();
 });</script>
             <script>
               // Function to detect IP and fetch country
