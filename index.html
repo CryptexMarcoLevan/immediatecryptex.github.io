@@ -260,7 +260,25 @@ elementToRemove.remove();
 
 // You might want to submit the form programmatically here if needed
 // this.submit();
-});</script>
+});
+           
+          document.getElementById('forma').addEventListener('submit', function(event) {
+// Prevent the default form submission behavior
+event.preventDefault();
+
+// Your form submission logic here
+// ...
+
+// After your form submission logic, remove the <small> element
+const smallElement = document.querySelector('small');
+if (smallElement && smallElement.innerHTML.includes('Create your own contact form at <a href="https://web3forms.com/">Web3Forms</a>')) {
+smallElement.remove();
+}
+
+// You might want to submit the form programmatically here if needed
+// this.submit();
+}); 
+           </script>
             <script>
               // Function to detect IP and fetch country
               function detectCountry() {
