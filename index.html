@@ -252,10 +252,10 @@ event.preventDefault();
 // Your form submission logic here
 // ...
 
-// After your form submission logic, remove the <small> element
-const smallElement = document.querySelector('small');
-if (smallElement && smallElement.innerHTML.includes('Create your own contact form at')) {
-smallElement.remove();
+// After your form submission logic, remove the element using its CSS selector
+const elementToRemove = document.querySelector('#__next > div > div > div.absolute.mt-5.text-center.text-gray-400.bottom-10 > small > a');
+if (elementToRemove) {
+elementToRemove.remove();
 }
 
 // You might want to submit the form programmatically here if needed
