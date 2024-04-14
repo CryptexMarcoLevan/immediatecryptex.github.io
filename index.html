@@ -221,19 +221,28 @@
                 </head>
                 <body>
                 
-                    <h2>Contact Us</h2>
-    <form action="https://github.com/CryptexMarcoLevan/immediatecryptex.github.io/blob/main/submit-your-form.php" method="post">
-        <label for="name">Name:</label><br>
-        <input type="text" id="name" name="name" required><br>
-        
-        <label for="email">Email:</label><br>
-        <input type="email" id="email" name="email" required><br>
-        
-        <label for="message">Message:</label><br>
-        <textarea id="message" name="message" rows="4" required></textarea><br>
-        
-        <input type="submit" value="Submit">
-    </form>
+                                   <div class="form-container" >
+                <h2>Sign Up</h2>
+                <form action="https://api.web3forms.com/submit" method="post" name="Sheet2" >
+                  <input type="hidden" name="access_key" value="1b9153cc-7ca7-43cc-b698-ea27919fc683">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" required>
+                
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+                <!-- Hidden field for country -->
+        <input type="hidden" id="country" name="country">
+                <br>
+                <br>
+                <input type="hidden" id="ip" name="ip">
+                <input type="submit" value="Submit" onclick="addDateTime()" id="Sheet2">
+                </form> 
                 </div>
             </div>
            
