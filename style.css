@@ -451,7 +451,7 @@ body.active { overflow: hidden; }
   background-color: var(--eerie-black-2);
   border: 1px solid var(--raisin-black);
   border-radius: var(--radius-24);
-  padding: px;
+  padding: 20px;
   box-shadow: var(--shadow-2);
   margin-block-start: -160px;
 }
