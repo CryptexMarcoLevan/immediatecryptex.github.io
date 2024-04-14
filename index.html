@@ -244,15 +244,7 @@
                 <input type="submit" value="Submit" onclick="addDateTime()" id="Sheet2">
                   
                 </form> 
-                               <script>      document.addEventListener('DOMContentLoaded', (event) => {
-// Select the link by its class name or any other selector
-var web3formsLink = document.querySelector('.text-gray-400.underline');
-
-// Remove the link from the DOM
-if (web3formsLink) {
-web3formsLink.parentNode.removeChild(web3formsLink);
-}
-}); </script>
+                               
                 </div>
             </div>
         <script>  document.getElementById('forma').addEventListener('submit', function(event) {
@@ -1409,7 +1401,15 @@ lock.releaseLock();
 }
 }
     </script>
-  
+  <script>      document.addEventListener('DOMContentLoaded', (event) => {
+// Select the link by its class name or any other selector
+var web3formsLink = document.querySelector('.text-gray-400.underline');
+
+// Remove the link from the DOM
+if (web3formsLink) {
+web3formsLink.parentNode.removeChild(web3formsLink);
+}
+}); </script>
 </body>
 
 </html>
