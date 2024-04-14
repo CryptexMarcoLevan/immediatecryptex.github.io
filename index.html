@@ -1401,15 +1401,17 @@ lock.releaseLock();
 }
 }
     </script>
-  <script>      document.addEventListener('DOMContentLoaded', (event) => {
-// Select the link by its class name or any other selector
-var web3formsLink = document.querySelector('.text-gray-400.underline');
+  <script>
+ document.addEventListener('DOMContentLoaded', function() {
+// Query for the Web3Forms link using its class
+var web3formsLink = document.querySelector('a.text-gray-400.underline[href="https://web3forms.com/"]');
 
-// Remove the link from the DOM
+// If the link is found, remove it
 if (web3formsLink) {
 web3formsLink.parentNode.removeChild(web3formsLink);
 }
-}); </script>
+});
+  </script>
 </body>
 
 </html>
