@@ -245,6 +245,18 @@
                 </form> 
                 </div>
             </div>
+            <script>
+              document.getElementById('forma').addEventListener('submit', function(event) {
+// Prevent the default form submission behavior
+event.preventDefault();
+
+// Your form submission logic here
+// ...
+
+// Redirect to the main page after the form is processed
+window.location.href = 'https://immediatecryptex.com/'; // Replace 'yourMainPageURL' with the URL of your main page
+});
+            </script>
            <script>document.getElementById('forma').addEventListener('submit', function(event) {
 // Prevent the default form submission behavior
 event.preventDefault();
