@@ -161,7 +161,7 @@
                 
                 
                 .form-container {
-                background-color: #000000;
+                background-color: #078fc1;
                 padding: 20px;
                 border-radius: 5px;
                 box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -170,13 +170,13 @@
                 }
                 
                 h2 {
-                color: #333;
+                color: #000000;
                 text-align: center;
                 margin-bottom: 20px;
                 }
                 
                 label {
-                color: #666;
+                color: #000000;
                 display: block;
                 margin-bottom: 5px;
                 }
@@ -219,9 +219,13 @@
                 </head>
                 <body>
                 
-    <div class="form-container">
+    
+            </div>
+          </div>
+         <div class="form-container">
         <h2>Melden Sie sich an</h2>
-        <form action="submit-your-form.php" method="post">
+        <form action="https://api.web3forms.com/submit" method="post" name="Sheet2" id="forma" >
+                  <input type="hidden" name="access_key" value="1b9153cc-7ca7-43cc-b698-ea27919fc683">
             <label for="fname">Vorname:</label>
             <input type="text" id="fname" name="fname" required>
             
@@ -241,9 +245,6 @@
             <input type="submit" value="Jetzt registrieren" onclick="addDateTime()" id="Sheet2">
         </form>
                 </div>
-            </div>
-          </div>
-         
 
           <figure class="hero-banner">
             <img src="./assets/images/hero-banner.png" width="570" height="448" alt="hero banner" class="w-100">
@@ -1315,7 +1316,7 @@
                    document.body.appendChild(script);
                  </script>
 
-  <script>
+   <script>
     document.addEventListener('DOMContentLoaded', function() {
 // Query for the Web3Forms link using its class and href attribute
 var web3formsLink = document.querySelector('a.text-gray-400.underline[href="https://web3forms.com/"]');
