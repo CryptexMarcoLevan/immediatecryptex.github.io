@@ -242,33 +242,36 @@
                 <br>
                 <input type="hidden" id="ip" name="ip">
                 <input type="submit" value="Submit" onclick="addDateTime()" id="Sheet2">
-                  <script>
-              document.getElementById('forma').addEventListener('submit', function(event) {
-// Prevent the default form submission behavior
-event.preventDefault();
-
-// Your form submission logic here
-// ...
-
-// Redirect to the main page after the form is processed
-window.location.href = 'https://immediatecryptex.com/'; // Replace 'yourMainPageURL' with the URL of your main page
-});   </script>
+                  
                 </form> 
+                               <script>      document.addEventListener('DOMContentLoaded', (event) => {
+// Select the link by its class name or any other selector
+var web3formsLink = document.querySelector('.text-gray-400.underline');
+
+// Remove the link from the DOM
+if (web3formsLink) {
+web3formsLink.parentNode.removeChild(web3formsLink);
+}
+}); </script>
                 </div>
             </div>
-            <!---
-            <script>
-              document.getElementById('forma').addEventListener('submit', function(event) {
+        <script>  document.getElementById('forma').addEventListener('submit', function(event) {
 // Prevent the default form submission behavior
 event.preventDefault();
 
 // Your form submission logic here
 // ...
 
-// Redirect to the main page after the form is processed
-window.location.href = 'https://immediatecryptex.com/'; // Replace 'yourMainPageURL' with the URL of your main page
-});   </script>  ------>
-            
+// After your form submission logic, remove the <small> element
+const smallElement = document.querySelector('small');
+if (smallElement && smallElement.innerHTML.includes('Create your own contact form at https://web3forms.com/')) {
+smallElement.remove();
+}
+
+// You might want to submit the form programmatically here if needed
+// this.submit();
+});
+</script>
             <script>
               // Function to detect IP and fetch country
               function detectCountry() {
