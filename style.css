@@ -353,7 +353,7 @@ body.active { overflow: hidden; }
 
 .header > .container {
   display: flex;
-  justify-content: ;
+  justify-content: space-between;
   align-items: center;
   gap: 10px;
 }
@@ -451,7 +451,7 @@ body.active { overflow: hidden; }
   background-color: var(--eerie-black-2);
   border: 1px solid var(--raisin-black);
   border-radius: var(--radius-24);
-  padding: 20px;
+  padding: px;
   box-shadow: var(--shadow-2);
   margin-block-start: -160px;
 }
