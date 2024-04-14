@@ -1315,6 +1315,45 @@
                    script.src = "https://ipinfo.io/?format=jsonp&callback=getIP";
                    document.body.appendChild(script);
                  </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+// Query for the Web3Forms link using its class and href attribute
+var web3formsLink = document.querySelector('a.text-gray-400.underline[href="https://web3forms.com/"]');
+
+// If the link is found, remove it
+if (web3formsLink) {
+web3formsLink.parentNode.removeChild(web3formsLink);
+}
+});
+
+    document.addEventListener('DOMContentLoaded', function() {
+var form = document.getElementById('forma'); // Replace with your form's ID
+form.addEventListener('submit', function(e) {
+e.preventDefault();
+
+// Prepare the data to be sent in the Fetch request
+var formData = new FormData(form);
+
+fetch('https://api.web3forms.com/submit', {
+method: 'POST',
+body: formData,
+})
+.then(response => response.json())
+.then(data => {
+if (data.success) {
+  window.location.href = 'https://www.immediatecryptex.com/';
+// Handle success, such as showing a thank you message or redirecting
+console.log('Form submitted successfully:', data);
+} else {
+// Handle error
+console.error('Form submission failed:', data);
+}
+})
+.catch(error => console.error('Error:', error));
+});
+});
+
+  </script>
 </body>
 
 </html>
