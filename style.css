@@ -353,7 +353,7 @@ body.active { overflow: hidden; }
 
 .header > .container {
   display: flex;
-  justify-content: space-between;
+  justify-content: ;
   align-items: center;
   gap: 10px;
 }
