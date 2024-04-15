@@ -157,7 +157,43 @@
 
             <!-- <a href="#rgst" class="btn btn-primary">Register now</a> -->
             <br>
-            <div class="rgst" id="rgst">
+          
+                </head>
+                <body>
+                
+                                   
+            </div>
+       
+            <script>
+              // Function to detect IP and fetch country
+              function detectCountry() {
+                  fetch('https://ipapi.co/json/')
+                      .then(response => response.json())
+                      .then(data => {
+                          document.getElementById('country').value = data.country_name;
+                      })
+                      .catch(error => console.error('Error:', error));
+              }
+              
+              // Call the function when the page loads
+              window.onload = detectCountry;
+              </script>
+         <script>
+        function doPost(e) {
+  try {
+    // Log the received form data
+    Logger.log('Received form data:', e.parameter);
+
+    // Your existing code to process the form data and insert into Google Sheets
+    // ...
+  } catch (error) {
+    Logger.log('Error:', error);
+  }
+}
+</script>
+    
+          </div>
+           <div class="rgst" id="rgst">
             
               <style>
                 
@@ -218,44 +254,8 @@
                 }
                 }
                 </style>
-                </head>
-                <body>
-                
-                                   
-            </div>
-       
-            <script>
-              // Function to detect IP and fetch country
-              function detectCountry() {
-                  fetch('https://ipapi.co/json/')
-                      .then(response => response.json())
-                      .then(data => {
-                          document.getElementById('country').value = data.country_name;
-                      })
-                      .catch(error => console.error('Error:', error));
-              }
-              
-              // Call the function when the page loads
-              window.onload = detectCountry;
-              </script>
-         <script>
-        function doPost(e) {
-  try {
-    // Log the received form data
-    Logger.log('Received form data:', e.parameter);
-
-    // Your existing code to process the form data and insert into Google Sheets
-    // ...
-  } catch (error) {
-    Logger.log('Error:', error);
-  }
-}
-</script>
-    
-          </div>
-         
 <div class="form-container"  >
-                <h2>Sign Up</h2>
+                <h2 id="rgst">Sign Up</h2>
                 <form action="https://api.web3forms.com/submit" method="post" name="Sheet2" id="forma" >
                   <input type="hidden" name="access_key" value="1b9153cc-7ca7-43cc-b698-ea27919fc683">
                 <label for="fname">First Name:</label>
