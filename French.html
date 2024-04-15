@@ -100,7 +100,22 @@
         
         </ul>
       </nav>
-    
+     <script>
+                document.addEventListener("DOMContentLoaded", function() {
+    const containers = document.querySelectorAll(".container");
+
+    containers.forEach(function(container) {
+        container.style.position = "static";
+    });
+});
+document.addEventListener("DOMContentLoaded", function() {
+    const activeHeaders = document.querySelectorAll(".header.active");
+
+    activeHeaders.forEach(function(header) {
+        header.style.position = "static";
+    });
+});
+              </script>
       <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
         <span class="line line-1"></span>
         <span class="line line-2"></span>
