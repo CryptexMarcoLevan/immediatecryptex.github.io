@@ -102,33 +102,21 @@
         
         </ul>
       </nav>
-       <script>
+      <script>
+ // Get all elements with the class 'header'
+var headers = document.querySelectorAll('header.header');
 
-
-var activeHeaders = document.querySelectorAll('header.heade.active');
-
-// Loop through each active header element
-activeHeaders.forEach(function(activeHeader) {
+// Loop through each header element
+headers.forEach(function(header) {
     // Remove the 'active' class from the header
-    activeHeader.classList.remove('active');
+    header.classList.remove('active');
+    // Remove the 'header' class from the header
+    header.classList.remove('header');
 });
+
 </script>
-     <script>
-                document.addEventListener("DOMContentLoaded", function() {
-    const containers = document.querySelectorAll(".container");
+   
 
-    containers.forEach(function(container) {
-        container.style.position = "static";
-    });
-});
-document.addEventListener("DOMContentLoaded", function() {
-    const activeHeaders = document.querySelectorAll(".header.active");
-
-    activeHeaders.forEach(function(header) {
-        header.style.position = "static";
-    });
-});
-              </script>
       <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
         <span class="line line-1"></span>
         <span class="line line-2"></span>
