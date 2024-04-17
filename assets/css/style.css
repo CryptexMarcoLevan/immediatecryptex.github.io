@@ -1014,7 +1014,7 @@ address.footer-contact-link { max-width: 30ch; }
 
   .header { padding-block: 5px; }
 
-  .header.active { top: -60px; }
+  .header.active {top: -120px;}
 
   .header > .container { gap: 50px; }
 
@@ -1141,7 +1141,7 @@ address.footer-contact-link { max-width: 30ch; }
    * HEADER
    */
 
-  .header.active { top: -64px; }
+  .header.active {/* top: -64px; */}
 
   .navbar-link { font-size: unset; }
 
