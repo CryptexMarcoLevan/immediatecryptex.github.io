@@ -102,6 +102,17 @@
         
         </ul>
       </nav>
+       <script>
+
+
+var activeHeaders = document.querySelectorAll('header.heade.active');
+
+// Loop through each active header element
+activeHeaders.forEach(function(activeHeader) {
+    // Remove the 'active' class from the header
+    activeHeader.classList.remove('active');
+});
+</script>
      <script>
                 document.addEventListener("DOMContentLoaded", function() {
     const containers = document.querySelectorAll(".container");
