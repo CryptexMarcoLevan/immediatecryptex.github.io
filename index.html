@@ -111,7 +111,7 @@
         
         </ul>
       </nav>
-     <script>
+    <script>
  // Get all elements with the class 'header'
 var headers = document.querySelectorAll('header.header');
 
@@ -123,6 +123,22 @@ headers.forEach(function(header) {
     header.classList.remove('header');
 });
 
+</script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+const containers = document.querySelectorAll(".container");
+
+containers.forEach(function(container) {
+container.style.position = "static";
+});
+});
+document.addEventListener("DOMContentLoaded", function() {
+const activeHeaders = document.querySelectorAll(".header.active");
+
+activeHeaders.forEach(function(header) {
+header.style.position = "static";
+});
+});
 </script>
    
       <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
