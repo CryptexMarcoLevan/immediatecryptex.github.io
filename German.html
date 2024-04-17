@@ -10,7 +10,7 @@
   <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+   <link rel="shortcut icon" href="images/logo.svg" type="image/svg+xml">
 
   <!-- 
     - custom css link
@@ -100,6 +100,17 @@
         
         </ul>
       </nav>
+       <script>
+
+
+var activeHeaders = document.querySelectorAll('header.heade.active');
+
+// Loop through each active header element
+activeHeaders.forEach(function(activeHeader) {
+    // Remove the 'active' class from the header
+    activeHeader.classList.remove('active');
+});
+</script>
      <script>
                 document.addEventListener("DOMContentLoaded", function() {
     const containers = document.querySelectorAll(".container");
