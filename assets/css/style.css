@@ -30,7 +30,7 @@
 
 --smocky-black_30: hsla(0, 0%, 6%, 0.3);
 
---eerie-black-1: hsl(0deg 6.73% 94.72%);
+--eerie-black-1: hsl(216deg 25.06% 91.92%);
 
 --eerie-black-2: hsl(0deg 0% 100%);
 
@@ -180,8 +180,8 @@ html {
 }
 
 body {
-  background-color: var(--eerie-black-2);
-  color: var(--cadet-blue-crayola);
+  background-color: hsl(0deg 0% 100%);
+  color: hsl(0deg 0% 0%);
   font-size: 1.6rem;
   line-height: 1.4;
 }
