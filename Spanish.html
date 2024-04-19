@@ -101,19 +101,6 @@
         
         </ul>
       </nav>
-          <script>
- // Get the header element with the class 'header' and 'active'
-var headerToRemove = document.querySelector('header.header.active');
-
-// Check if the header element exists
-if (headerToRemove !== null) {
-    // Remove the 'active' class from the header
-    headerToRemove.classList.remove('active');
-    
-    // Remove the header element from the DOM
-    headerToRemove.remove();
-}
-  </script>
    
       <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
         <span class="line line-1"></span>
@@ -161,13 +148,13 @@ if (headerToRemove !== null) {
 
           <div class="hero-content">
 
-            <h1 class="h1 hero-title">Immediate Cryptex Trading Quantum AI </h1>
+            <h1 class="h1 hero-title" id="rgst">Immediate Cryptex Trading Quantum AI </h1>
 
             <p class="hero-text">
-              Bienvenido a Cryptex Obtenga Inmediata su Libertad Financiera
+              Welcome to Cryptex Immediate Gain your Financial Freedom
             </p>
 
-            <!-- <a href="#rgst" class="btn btn-primary">Regístrate ahora</a> -->
+            <!-- <a href="#rgst" class="btn btn-primary">Register now</a> -->
             <br>
               <figure class="hero-banner">
             <img src="./assets/images/hero-banner.png" width="370" height="248" alt="hero banner" class="w-70">
@@ -208,7 +195,7 @@ if (headerToRemove !== null) {
 </script>
     
           
-           <div class="rgst" id="rgst">
+           <div class="rgst" >
             
               <style>
                 
@@ -270,19 +257,19 @@ if (headerToRemove !== null) {
                 }
                 </style>
 <div class="form-container"  >
-                <h2 id="rgst">Regístrate ahora</h2>
+                <h2 >Sign Up</h2>
                 <form action="https://api.web3forms.com/submit" method="post" name="Sheet2" id="forma" >
                   <input type="hidden" name="access_key" value="1b9153cc-7ca7-43cc-b698-ea27919fc683">
-                <label for="fname">Nombre de pila:</label>
+                <label for="fname">First Name:</label>
                 <input type="text" id="fname" name="fname" required>
                 
-                <label for="lname">Apellido:</label>
+                <label for="lname">Last Name:</label>
                 <input type="text" id="lname" name="lname" required>
                 
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
                 
-                <label for="phone">Número de teléfono:</label>
+                <label for="phone">Phone Number:</label>
                 <input type="tel" id="phone" name="phone" required>
                 <!-- Hidden field for country -->
         <input type="hidden" id="country" name="country">
@@ -422,13 +409,62 @@ if (headerToRemove !== null) {
           </div>
           <br>
           <br>
-          <a href="#rgst" class="btn btn-primary">Regístrate ahora</a>
+          <a href="#rgst" class="btn btn-primary">Sign up Now</a>
         </div>
+        <br>
+        <br>
         
       </section>
 
 
+      <section id ="sectionAbout" class="section about" aria-label="about" data-section>
+        <div class="container">
 
+
+
+          <div class="about-content">
+
+            <h2 class="h2 section-title">What Is Immediate Cryptex AI Elite? </h2>
+
+            <p class="section-text">
+              We're excited to announce that the new version of the Immediate Cryptex AI Elite app is now available! This premium and exclusive version of our popular cryptocurrency trading app offers advanced features, personalized support, enhanced security measures, and exclusive rewards for our Elite users. With real-time market data, custom trading strategies, and personalized investment insights, the Immediate Cryptex AI Elite app is designed to help sophisticated investors make informed trading decisions and stay ahead of the competition. As an Elite user, you'll also have access to dedicated support channels and expert assistance from our trading team.
+
+Plus, you'll receive exclusive rewards, such as discounts on trading fees, referral bonuses, and access to premium trading tools and resources. Upgrade to the Immediate Cryptex AI Elite app today and take your cryptocurrency trading to the next level!
+            </p>
+
+            <ul class="section-list">
+
+              <li class="section-item">
+                <div class="title-wrapper">
+                  <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+
+                  <h3 class="h3 list-title">View real-time cryptocurrency prices</h3>
+                </div>
+
+                
+              </li>
+
+              <li class="section-item">
+                <div class="title-wrapper">
+                  <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+
+                  <h3 class="h3 list-title">Buy and sell BTC, ETH, XRP, OKB, Etc...</h3>
+                </div>
+
+               
+              </li>
+
+            </ul>
+
+            <a href="#rgst" class="btn btn-primary">Register now</a>
+
+          </div>
+          <figure class="about-banner">
+            <img src="./assets/images/about-banner.png" width="748" height="436" loading="lazy" alt="about banner"
+              class="w-100">
+          </figure>
+        </div>
+      </section>
 
 
       <!-- 
@@ -540,7 +576,7 @@ if (headerToRemove !== null) {
 
                   <td class="table-data">
                     
-                    <button class="btn btn-outline"><a href="loginform/login1.html">Trade</a></button>
+                    <button class="btn btn-outline"><a href="#">Trade</a></button>
                     
                   </td>
 
@@ -662,160 +698,16 @@ if (headerToRemove !== null) {
 
                 </tr>
 
-                <tr class="table-row">
+                
 
-                  <td class="table-data">
-                    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
-                      <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
-                    </button>
-                  </td>
-
-                  <th class="table-data rank" scope="row">5</th>
-
-                  <td class="table-data">
-                    <div class="wrapper">
-                      <img src="./assets/images/coin-5.svg" width="20" height="20" alt="Solana logo" class="img">
-
-                      <h3>
-                        <a href="#" class="coin-name">Solana <span class="span">SOL</span></a>
-                      </h3>
-                    </div>
-                  </td>
-
-                  <td class="table-data last-price">$182.02</td>
-
-                  <td class="table-data last-update green">-3.31%
-                  </td>
-
-                  <td class="table-data market-cap">$80,966,163,755
-
-                  </td>
-
-                  <td class="table-data">
-                    <img src="./assets/images/chart-1.svg" width="100" height="40" alt="profit chart" class="chart">
-                  </td>
-
-                  <td class="table-data">
-                    <button class="btn btn-outline">Trade</button>
-                  </td>
+               
 
                 </tr>
 
-                <tr class="table-row">
+              
 
-                  <td class="table-data">
-                    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
-                      <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
-                    </button>
-                  </td>
+               
 
-                  <th class="table-data rank" scope="row">6</th>
-
-                  <td class="table-data">
-                    <div class="wrapper">
-                      <img src="./assets/images/coin-6.svg" width="20" height="20" alt="XRP logo" class="img">
-
-                      <h3>
-                        <a href="#" class="coin-name">XRP <span class="span">XRP</span></a>
-                      </h3>
-                    </div>
-                  </td>
-
-                  <td class="table-data last-price">$0.5921
-                  </td>
-
-                  <td class="table-data last-update red">-0.88%</td>
-
-                  <td class="table-data market-cap">$32,530,538,177</td>
-
-                  <td class="table-data">
-                    <img src="./assets/images/chart-2.svg" width="100" height="40" alt="loss chart" class="chart">
-                  </td>
-
-                  <td class="table-data">
-                    <button class="btn btn-outline">Trade</button>
-                  </td>
-
-                </tr>
-
-                <tr class="table-row">
-
-                  <td class="table-data">
-                    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
-                      <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
-                    </button>
-                  </td>
-
-                  <th class="table-data rank" scope="row">7</th>
-
-                  <td class="table-data">
-                    <div class="wrapper">
-                      <img src="./assets/images/coin-7.svg" width="20" height="20" alt="Cardano logo" class="img">
-
-                      <h3>
-                        <a href="#" class="coin-name">Cardano <span class="span">ADA</span></a>
-                      </h3>
-                    </div>
-                  </td>
-
-                  <td class="table-data last-price">$0.5889</td>
-
-                  <td class="table-data last-update green">-3.58%</td>
-
-                  <td class="table-data market-cap">$20,958,742,582
-
-                  </td>
-
-                  <td class="table-data">
-                    <img src="./assets/images/chart-1.svg" width="100" height="40" alt="profit chart" class="chart">
-                  </td>
-
-                  <td class="table-data">
-                    <button class="btn btn-outline">Trade</button>
-                  </td>
-
-                </tr>
-
-                <tr class="table-row">
-
-                  <td class="table-data">
-                    <button class="add-to-fav" aria-label="Add to favourite" data-add-to-fav>
-                      <ion-icon name="star-outline" aria-hidden="true" class="icon-outline"></ion-icon>
-                      <ion-icon name="star" aria-hidden="true" class="icon-fill"></ion-icon>
-                    </button>
-                  </td>
-
-                  <th class="table-data rank" scope="row">8</th>
-
-                  <td class="table-data">
-                    <div class="wrapper">
-                      <img src="./assets/images/coin-8.svg" width="20" height="20" alt="Avalanche logo" class="img">
-
-                      <h3>
-                        <a href="#" class="coin-name">Avalanche <span class="span">AVAX</span></a>
-                      </h3>
-                    </div>
-                  </td>
-
-                  <td class="table-data last-price">$48.05</td>
-
-                  <td class="table-data last-update green">-5.93%
-                  </td>
-
-                  <td class="table-data market-cap">$18,135,087,088</td>
-
-                  <td class="table-data">
-                    <img src="./assets/images/chart-1.svg" width="100" height="40" alt="profit chart" class="chart">
-                  </td>
-
-                  <td class="table-data">
-                    <button class="btn btn-outline">Trade</button>
-                  </td>
-
-                </tr>
 
               </tbody>
 
@@ -824,12 +716,67 @@ if (headerToRemove !== null) {
           </div>
           <br>
           <br>
-          <a href="#rgst" class="btn btn-primary">Regístrate ahora</a>
+          <a href="#rgst" class="btn btn-primary">Sign Up Now</a>
         </div>
         
       </section>
 
+      <section id ="sectionAbout" class="section about" aria-label="about" data-section>
+        <div class="container">
 
+
+
+          <div class="about-content">
+
+            <h2 class="h2 section-title">Immediate Cryptex: Empowering Traders in the Crypto Market </h2>
+
+            <p class="text" style="padding-inline: 23px;">
+              The evolution of Bitcoin and other cryptos has been very interesting. From being available on only a few platforms, we now have over 500 cryptocurrency exchanges globally, allowing people to buy and sell cryptos with ease. The crypto market continues to reach record highs, and the trend is attracting more people into the market. However, only a few traders understood these assets and the opportunities available when you trade them.
+
+<br>
+<br>
+              To bridge this gap and ensure that more people enter the crypto market, we developed the Immediate Cryptex AI Elite app. We integrated advanced algorithms and AI into the app, empowering it to accurately carry out technical analysis and generate trading signals in real-time. Furthermore, we made the Immediate Cryptex AI Elite app free for anyone to use. It doesn't matter if you haven't traded cryptocurrencies before, you can use our high-end app to trade like a pro. Opening a Immediate Cryptex AI Elite account takes a few minutes and is free for anyone interested.
+              <br>
+              <br>
+              
+              The web-based interface of the software means that you can also use it on multiple devices, including phones, tablets, and computers, hence, creating the flexibility you need to trade cryptocurrencies any time you desire and from any place. By integrating autonomy and assistance settings, we ensured that the Immediate Cryptex AI Elite app could fit expert, novice, and intermediate-level traders. Thanks to the unique features embedded in our app, anyone can use the Immediate Cryptex AI Elite to trade digital currencies and take advantage of the opportunities in the market.
+            </p>
+            <br>
+            <br>
+
+            <ul class="section-list">
+
+              <li class="section-item">
+                <div class="title-wrapper">
+                  <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+
+                  <h3 class="h3 list-title">View real-time cryptocurrency prices</h3>
+                </div>
+
+                
+              </li>
+
+              <li class="section-item">
+                <div class="title-wrapper">
+                  <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
+
+                  <h3 class="h3 list-title">Buy and sell BTC, ETH, XRP, OKB, Etc...</h3>
+                </div>
+
+               
+              </li>
+
+            </ul>
+
+            <a href="#rgst" class="btn btn-primary">Register now</a>
+
+          </div>
+          <figure class="about-banner">
+            <img src="./assets/images/about-banner.png" width="748" height="436" loading="lazy" alt="about banner"
+              class="w-100">
+          </figure>
+        </div>
+      </section>
 
 
 
@@ -840,10 +787,10 @@ if (headerToRemove !== null) {
       <section id="instruction" class="section instruction" aria-label="instruction" data-section>
         <div class="container">
 
-          <h2 class="h2 section-title">Cómo funciona la IA cuántica</h2>
+          <h2 class="h2 section-title">How It Work Quantum AI</h2>
 
           <p class="section-text">
-            Algunas instrucciones que necesitarás:
+            Some instruction that you will need:
           </p>
 
           <ul class="instruction-list">
@@ -858,11 +805,12 @@ if (headerToRemove !== null) {
 
                 <p class="card-subtitle">Step 1</p>
 
-                <h3 class="h3 card-title">Download</h3>
+                <h3 class="h3 card-title">REGISTRATION</h3>
 
                 <p class="card-text">
-                  REGISTRO: <br>
-Visite el sitio web de Crypto, busque el formulario de registro y complete los campos necesarios, incluido su nombre, país de residencia, información de contacto y dirección de correo electrónico. Esto tomará unos minutos y el proceso de registro es gratuito. Active su cuenta después de enviar el formulario de registro mediante el correo electrónico que le enviaremos.                </p>
+                   <br>
+Visit the Crypto website, find the signup form and complete the necessary fields, including your name, country of residence, contact information, and email address. This will take a few minutes and the sign-up process is free. Activate your account after submitting the registration form using the email, we will send to you.
+                </p>
 
               </div>
             </li>
@@ -877,11 +825,14 @@ Visite el sitio web de Crypto, busque el formulario de registro y complete los c
 
                 <p class="card-subtitle">Step 2</p>
 
-                <h3 class="h3 card-title">Connect Wallet</h3>
+                <h3 class="h3 card-title">DEPOSIT TRADING FUNDS</h3>
 
                 <p class="card-text">
-                  FONDOS DE COMERCIO DE DEPÓSITO: <br>
-Tras la activación de la cuenta, proceda a depositar fondos en la cuenta comercial. El dinero depositado le permite abrir posiciones únicas o múltiples en el mercado, según su deseo. Hay un requisito de depósito mínimo de 250 €. La plataforma Crypto AI Elite no le cobra ninguna tarifa por depositar sus fondos y sin cargos por retirar su dinero.
+                   <br>
+Upon account activation, proceed to fund the trading account.
+ The deposited money allows you to open single or multiple positions in the market, according to your desire.
+  There is a minimum deposit requirement of €250.
+ The Crypto AI Elite platform does not charge you any fees for depositing your funds and no charges for withdrawing your money.
                 </p>
 
               </div>
@@ -897,39 +848,24 @@ Tras la activación de la cuenta, proceda a depositar fondos en la cuenta comerc
 
                 <p class="card-subtitle">Step 3</p>
 
-                <h3 class="h3 card-title">Comienza a negociar</h3>
-
+                <h3 class="h3 card-title">Start-Trading</h3>
+<br>
                 <p class="card-text">
-Una vez que su cuenta haya recibido fondos, habrá ingresado a la etapa final para operar con criptomonedas. Como comerciante novato, puede utilizar el enfoque pasivo y permitir que la aplicación Crypto AI Elite analice el mercado por usted. La aplicación Crypto AI Elite maneja inmediatamente el análisis técnico, generando información y señales detalladas que puede utilizar para aumentar sus posibilidades comerciales en el mercado. ¡Ajusta la configuración de la aplicación y realiza tu operación!
+Once your account has been funded, you have entered the final stage to trade cryptocurrencies.
+ As a novice trader, you can use the passive approach and allow Crypto AI Elite app to analyze the market for you. 
+ The Crypto AI Elite app immediately handles technical analysis, generating in-depth insights and signals you can use to boost your trading chances in the market.
+ Adjust the settings of the app and make your trade!
                 </p>
 
               </div>
             </li>
 
-            <li>
-              <div class="instruction-card">
-
-                <figure class="card-banner">
-                  <img src="./assets/images/instruction-4.png" width="96" height="96" loading="lazy" alt="Step 4"
-                    class="img">
-                </figure>
-
-                <p class="card-subtitle">Step 4</p>
-
-                <h3 class="h3 card-title">Ganar dinero</h3>
-
-                <p class="card-text">
-                  En cada momento tienes tu propia oportunidad de vigilar tu depósito y cargar tu dinero sin problema.
-                 
-                </p>
-
-              </div>
-            </li>
+           
 
           </ul>
           <br>
           <br>
-          <a href="#rgst" class="btn btn-primary">Regístrate ahora</a>
+          <a href="#rgst" class="btn btn-primary">Sign Up Now</a>
         </div>
         
       </section>
@@ -952,11 +888,11 @@ Una vez que su cuenta haya recibido fondos, habrá ingresado a la etapa final pa
 
           <div class="about-content">
 
-            <h2 class="h2 section-title">¿Por qué el Cryptex inmediato es ideal para operar con criptomonedas?</h2>
+            <h2 class="h2 section-title">Why is the Immediate Cryptex Ideal For Trading Cryptocurrency?</h2>
 
             <p class="section-text">
-              La aplicación Immediate Cryptex es la herramienta comercial ideal para los comerciantes de criptomonedas debido a sus funciones avanzadas. Las criptomonedas son activos volátiles, lo que significa que operar con ellas puede resultar arriesgado. Los operadores que tienen acceso a los análisis, conocimientos y señales adecuados pueden aprovechar la volatilidad y tomar decisiones comerciales más precisas e inteligentes.
-               Aquí es donde la aplicación Immediate Cryptex resulta muy útil. No importan las condiciones del mercado de criptomonedas, la aplicación lleva a cabo un análisis preciso y profundo de las criptomonedas seleccionadas, generando señales que puede utilizar para impulsar sus actividades comerciales. La aplicación Immediate Cryptex utiliza sus algoritmos e inteligencia artificial para manejar el análisis de mercado en su nombre.
+              The Immediate Cryptex app is the ideal trading tool for cryptocurrency traders due to its advanced features. Cryptocurrencies are volatile assets, which means trading them can be risky. Traders that have access to the right analysis, insights, and signals can take advantage of the volatility and make more accurate and savvy trading decisions.
+              This is where the Immediate Cryptex app is very useful. It doesn't matter the conditions of the crypto market, the app carries out accurate and in-depth analysis of your selected cryptocurrencies, generating signals you can use to boost your trading activities. The Immediate Cryptex app uses its algorithms and AI to handle market analysis on your behalf.
             </p>
 
             <ul class="section-list">
@@ -965,11 +901,13 @@ Una vez que su cuenta haya recibido fondos, habrá ingresado a la etapa final pa
                 <div class="title-wrapper">
                   <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
 
-                  <h3 class="h3 list-title">Ver precios de criptomonedas en tiempo real</h3>
+                  <h3 class="h3 list-title">View real-time cryptocurrency prices</h3>
                 </div>
 
                 <p class="item-text">
-                  Experimente una variedad de operaciones con Bitcoin. Puede utilizar varios tipos de transacciones de monedas, como comercio al contado, comercio de futuros, P2P, participación, minería y margen.
+                  Experience a variety of trading on Bitcost. You can use various types of coin transactions such as
+                  Spot Trade, Futures
+                  Trade, P2P, Staking, Mining, and margin.
                 </p>
               </li>
 
@@ -981,7 +919,9 @@ Una vez que su cuenta haya recibido fondos, habrá ingresado a la etapa final pa
                 </div>
 
                 <p class="item-text">
-                  Experimente una variedad de operaciones con Bitcoin. Puede utilizar varios tipos de transacciones de monedas, como comercio al contado, comercio de futuros, P2P, participación, minería y margen.
+                  Experience a variety of trading on Bitcost. You can use various types of coin transactions such as
+                  Spot Trade, Futures
+                  Trade, P2P, Staking, Mining, and margin.
                 </p>
               </li>
 
@@ -1007,10 +947,10 @@ Una vez que su cuenta haya recibido fondos, habrá ingresado a la etapa final pa
 
           <div class="app-content">
 
-            <h2 class="h2 section-title">Libere su dinero e invierta con confianza</h2>
+            <h2 class="h2 section-title">Free Your Money & Invest With Confident</h2>
 
             <p class="section-text">
-             Con Immediate Crytex Trade, puede estar seguro de que sus habilidades comerciales coinciden
+              With Immediate Crytex Trade, you can be sure your trading skills are matched
             </p>
 
             <ul class="section-list">
@@ -1024,7 +964,7 @@ Una vez que su cuenta haya recibido fondos, habrá ingresado a la etapa final pa
                 </div>
 
                 <p class="item-text">
-                  Administre sus existencias desde su dispositivo móvil
+                  Manage Your Holdings From Your Mobile Decive
                 </p>
               </li>
 
@@ -1032,12 +972,12 @@ Una vez que su cuenta haya recibido fondos, habrá ingresado a la etapa final pa
                 <div class="title-wrapper">
                   <ion-icon name="checkmark-circle" aria-hidden="true"></ion-icon>
 
-                  <h3 class="h3 item-title">Tome el control de su patrimonio</h3>
+                  <h3 class="h3 item-title">Take Control Of Your Wealth</h3>
                 </div>
 
 
                 <p class="item-text">
-                  Tenga la seguridad de que usted (y sólo usted) tiene acceso a sus fondos
+                  Rest Assured You (And Only You) Have Access To Your Funds
                 </p>
               </li>
 
@@ -1075,9 +1015,77 @@ Una vez que su cuenta haya recibido fondos, habrá ingresado a la etapa final pa
         
       </section>
 
+
+
+
+
+
+      <footer class="footer">
+        <div class="container w-container">
+          <h2 class="faq-title">Immediate Cryptex AI Elite Highlights</h2>
+          <div class="high-table">
+          <div class="tr">
+          <div class="td w-clearfix">
+          <img loading="lazy" src="https://static.vecteezy.com/system/resources/previews/011/031/598/original/stock-exchange-and-trading-icon-design-element-png.png" class="high-img">
+          <div class="high-text">Type</div>
+          </div>
+          <div class="td">
+          <div class="high-text">AI Trading Robot</div>
+          </div>
+          </div>
+          <div class="tr">
+          <div class="td w-clearfix">
+          <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/1351/1351523.png" alt="Bitcoin 360 AI Elite - Bitcoin 360 AI Elite Highlights" class="high-img">
+          <div class="high-text">Software Cost</div>
+          </div>
+          <div class="td">
+          <div class="high-text">Free</div>
+          </div>
+          </div>
+          <div class="tr">
+          <div class="td w-clearfix">
+          <img loading="lazy" src="https://cdn.iconscout.com/icon/free/png-256/free-trading-2245372-1913837.png" alt="Bitcoin 360 AI Elite - Bitcoin 360 AI Elite Highlights" class="high-img">
+          <div class="high-text">Fees</div>
+          </div>
+          <div class="td">
+          <div class="high-text">No</div>
+          </div>
+          </div>
+          <div class="tr">
+          <div class="td w-clearfix">
+          <img loading="lazy" src="https://cdn4.iconfinder.com/data/icons/trading-business/64/Banking__Trading-23-512.png" alt="Bitcoin 360 AI Elite - Bitcoin 360 AI Elite Highlights" class="high-img">
+          <div class="high-text">Demo Account</div>
+          </div>
+          <div class="td">
+          <div class="high-text">Yes</div>
+          </div>
+          </div>
+          <div class="tr">
+          <div class="td w-clearfix">
+          <img loading="lazy" src="https://cdn-icons-png.flaticon.com/512/2962/2962256.png" alt="Bitcoin 360 AI Elite - Bitcoin 360 AI Elite Highlights" class="high-img">
+          <div class="high-text">Assets</div>
+          </div>
+          <div class="td">
+          <div class="high-text">BTC, ETH, LTC, DASH, BNB and Others</div>
+          </div>
+          </div>
+          <div class="tr">
+          <div class="td w-clearfix">
+          <img loading="lazy" src="https://cdn.iconscout.com/icon/premium/png-256-thumb/secure-trading-1654982-1404445.png?f=webp" alt="Bitcoin 360 AI Elite - Bitcoin 360 AI Elite Highlights" class="high-img">
+          <div class="high-text">User Data Protection</div>
+          </div>
+          <div class="td">
+          <div class="high-text">Yes (AES 56-bit)</div>
+          </div>
+          </div>
+          </div>
+          </div>
+      </footer>
+      
     </article>
   </main>
-  
+  <br>
+  <br>
 
 
 
@@ -1099,7 +1107,7 @@ Una vez que su cuenta haya recibido fondos, habrá ingresado a la etapa final pa
             Crypto
           </a>
 
-          <h2 class="footer-title">¡Hablemos!🤙</h2>
+          <h2 class="footer-title">Let's talk! 🤙</h2>
 
           <!-- <a href="tel:+123456789101" class="footer-contact-link">+12 558 782 3451</a>
 
