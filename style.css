@@ -180,7 +180,7 @@ html {
 }
 
 body {
-  background-image: url('https://readwrite.com/wp-content/uploads/2019/04/Reason-to-Invest-in-Online-Stock-Trading.jpg');
+  background: hsl(0deg, 0%, 100%) url('https://readwrite.com/wp-content/uploads/2019/04/Reason-to-Invest-in-Online-Stock-Trading.jpg') no-repeat;
   color: hsl(0deg 0% 0%);
   font-size: 1.6rem;
   line-height: 1.4;
