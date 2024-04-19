@@ -180,7 +180,7 @@ html {
 }
 
 body {
-  background: hsl(0deg, 0%, 100%) url('https://readwrite.com/wp-content/uploads/2019/04/Reason-to-Invest-in-Online-Stock-Trading.jpg') no-repeat;
+  background-color: hsl(0deg 0% 100%);
   color: hsl(0deg 0% 0%);
   font-size: 1.6rem;
   line-height: 1.4;
@@ -426,7 +426,7 @@ body.active { overflow: hidden; }
   transition: var(--transition-1);
 }
 
-.navbar-link:is(:hover, :focus, .active) { color: var(--blue-crayola); }
+.navbar-link:is(:hover, :focus, .active) { color: var(transparent); }
 
 
 
@@ -1070,7 +1070,7 @@ address.footer-contact-link { max-width: 30ch; }
   }
 
   .navbar-link:is(:hover, :focus, .active) {
-    background-color: var(--blue-crayola);
+    background-color: var(transparent);
     color: var(--white);
   }
 
@@ -1198,7 +1198,7 @@ address.footer-contact-link { max-width: 30ch; }
    * INSTRUCTION
    */
 
-  .instruction-list { grid-template-columns: repeat(4, 1fr); }
+  .instruction-list { grid-template-columns: repeat(3, 1fr); }
 
   .instruction-list > li:nth-child(even) .instruction-card::after {
     display: block;
