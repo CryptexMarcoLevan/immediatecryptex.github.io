@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ImmediateCryptex </title>
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="images/logo.svg" type="image/svg+xml">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="styleabout.css">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="style4.css">
+
+  <!-- 
+    - google font link
+  -->
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/js/intlTelInput.min.js"></script>
+  <link href="popup.html">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "immediatecryptex.com",
+      "url": "https://www.immediatecryptex.com/index.html",
+      "logo": "https://www.immediatecryptex.com/index.html/assets/images/logo.svg"
+    }
+    </script>
+</head>
+
+<body>
+  
+  <!-- 
+    - #HEADER
+  -->
+<div id="header">
+  <header class="header" data-header> 
+    
+  
+    <div class="container">
+
+      <a href="#" class="logo">
+        <img src="./assets/images/logo.svg" width="32" height="32" alt="Cryptex logo">
+        Immediate Cryptex               
+      </a>
+
+  <!-- <div class="langs">
+    <a href="#" data-lang="english" class="active">ENG</a>
+    <a href="#" data-lang="russian">РУС</a>
+    <a href="#" data-lang="armenian">ՀԱՅ</a>
+</div> -->
+      <nav class="navbar" data-navbar>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="https://www.immediatecryptex.com/#header" class="navbar-link active" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="https://www.immediatecryptex.com/#market" class="navbar-link active" data-nav-link>Market Update</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="https://www.immediatecryptex.com/#instruction" class="navbar-link active" data-nav-link>Quantum AI</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="https://www.immediatecryptex.com/#sectionAbout" class="navbar-link" data-nav-link>About Cryptex</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#rgst" class="navbar-link" data-nav-link>Register Now</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#" class="navbar-link" data-nav-link></a>
+            <div class="dropdown">
+              <button class="dropbtn"><i class="fa-solid fa-globe"></i></button>
+              <style>
+                .dropdown{
+                  padding-left: 270px;
+                }
+                
+                .fa-globe{
+                  font-size: 30px;
+
+                }
+              </style>
+              <div class="dropdown-content">
+                <a href="https://www.immediatecryptex.com/German.html"><img src="https://www.countryflags.com/wp-content/uploads/germany-flag-png-xl.png" width="45px">DE</a>
+                <a href="https://www.immediatecryptex.com/Spanish.html"><img src="https://icons.iconarchive.com/icons/wikipedia/flags/512/ES-Spain-Flag-icon.png" width="45px">ES</a>
+                <a href="https://www.immediatecryptex.com/French.html"><img src="https://cdn-icons-png.flaticon.com/512/197/197560.png" width="45px">FR</a>
+                <a href="https://www.immediatecryptex.com/Italy.html"><img src="https://www.countryflags.com/wp-content/uploads/italy-flag-png-xl.png" width="45px"> IT</a>
+                
+              </div>
+            </div>
+          </li>
+        
+        </ul>
+      </nav>
+   
+      <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <!--<a href="#" class="btn btn-outline">Login</a>-->
+    
+   <!-- <li class="buton" ><a href="loginform/login1.html">Login</a></li> -->
+   <style>
+    .buton a {
+      display: inline-block;
+      padding: 10px 20px;
+      border-block-end: 1px solid var(--raisin-black);
+      background-color: blue; 
+      color: white; 
+      text-decoration: none;
+      border-radius: 5px;
+      
+    }
+    .buton a:hover{
+        background: red;
+
+      }
+  </style>
+        
+    </div>
+    
+  </header>
+</div>
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero" aria-label="hero" data-section>
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title" id="rgst">TERMS OF USE OF THE WEBSITE AND SERVICES </h1>
+
+            <p class="hero-text">
+              1. General
+1.1. Welcome to Immediate Cryptex (the "Website").
+
+
+
+1.2. The Website includes information about third-party platforms (the "Third-Party Platforms") namely educational services on general investment techniques or market research. Altrix Edge serves as an intermediary, connecting users with such Third-Party Platforms (the "Services").
+
+1.3. These terms of use (the "Terms") govern your ("You", "Your" or "User") use of the Website and the Services. These Terms should be read carefully by You in their entirety prior to Your use of the Services. Please note that these Terms constitute a legally binding agreement between You and the Website’s operator Altrix Edge, info@ altrix-edge.mytestdoain.com. If You do not agree with any provision of these Terms, You shall immediately cease using the Website. By using the Website, You agree to the Terms, as amended from time to time.
+
+These Terms incorporate Our Privacy Policy and by agreeing to these Terms, You confirm that You also accept and agree to Our privacy policy (You can review Our Privacy Policy by clicking here).
+
+2. Description of the Services
+2.1. We are not a trading platform, nor do we put You in touch with such trading platforms, unless such trading platform commits to offer you only educational services or market research.
+
+2.2. We serve as an intermediary to connect You with an service provider able to propose educational content on general investment techniques or market research in their areas of interest to You..
+
+2.3. A representative from the abovementioned service provider will contact You after You have registered on Our Website by providing complete and correct information.
+
+2.4. The role of the representative mentioned in 2.3. is to provide You with information on general investment techniques which align with Your interests or are currently popular and improve your understanding of investment strategies.
+
+3. Eligibility
+3.1. You are only entitled to use the Website and benefit from the Services, if You comply with all of the following:
+
+3.1.1. You are at least 18 years old;
+
+3.1.2. You have the right, authority and capacity to enter into these Terms and to abide by all the terms and conditions of these Terms;
+
+3.1.3. You are not prohibited from using the Website and/or the Services pursuant to the laws of the country in which You reside or are located while using the Website.
+
+4. Restricted territories
+4.1. Without derogating from the generality of the foregoing, We may restrict the availability of the Website and/or Services (or any part thereof) to Users that are located in territories in which the legal and regulatory framework is incompatible with the provision of the Services.
+
+4.2. We may impose additional requirements or conditions before accepting Users residing in or from specific countries where this is necessary to comply with the laws of the territory in which the Users reside . Furthermore, it is acknowledged that if any Users should travel to the Restricted Territories, the Website and/or Services may be unavailable and/or blocked therein.
+
+5. Prohibited activities
+5.1. You undertake to use the Website and the Services in a respectful manner, and You undertake not to:
+
+5.1.1. Link to the Website and/or use the Website for the purpose of uploading, downloading, distributing, publishing or transmitting (a) information or other material in a manner that violates any rights, including intellectual property rights, protection of privacy rights or any other right; (b) information or other material that is prohibited for publication or use because it constitutes threat, harm, insult, slander, defamation, racism or inappropriate content; (c) information or other material that includes a virus or other software that may damage our computer systems or any third parties or in a manner that may restrict or prevent others from using the Website; (d) information or other material that violates any law; or (e) information or other material that includes an advertisement of any kind without our prior written permission;
+
+5.1.2. Delete or modify any attributions, legal notices or other proprietary designations or labels on the Website;
+
+5.1.3. Use the Services using any interface other than the Website;
+
+5.1.4. Interfere with other Users' use of the Website and/or the Services;
+
+5.1.5. Use bots or other automated methods to access or use the Website and/or the Services;
+
+5.1.6. Upload or transmit (or attempt to upload or to transmit), without Our express permission, any material that acts as a passive or active information collection or transmission mechanism, including, without limitation, web bugs, cookies or other similar spyware devices;
+
+5.1.7. Engage in “framing,” “mirroring,” or otherwise simulating the appearance or function of the Services;
+
+5.1.8. Violate any applicable laws or regulations, encourage or promote any illegal activity including, but not limited to, copyright infringement, trademark infringement, defamation, invasion of privacy, identity theft, hacking, cracking or distribution of counterfeit software;
+
+5.1.9. Make any changes and/or interfere in any way in the source code of the Website and upload any software and/or application that may harm or cause damage to the Website or any other third party;
+
+5.1.10. Disassemble, decompile or otherwise reverse engineer any software or other technology included in the Website or used to provide the Services.
+
+5.2. You acknowledge that without prejudice to any other right we may have, in case we establish that Your use of the Website does not comply with the provisions of these Terms or any applicable law, We may block Your access to the Website and/or Services.
+
+6. Intellectual property rights
+6.1. The Website and its content, including the video materials, text, photos, logos, designs, music, sound, figures, trademarks and any other content embodied in the Website are protected by Our or third party intellectual property rights.
+
+6.2. As between Us and the User, we retain all right, title and interest in and to the Website and the Services. The use of the Website and/or the Services does not confer on the User any of the intellectual property rights embodied in the Website and/or the Services, other than the right to use the Website and/or the Services in accordance with the terms of these Terms.
+
+6.3. The User may only use the Website and/or the Services for personal and non-commercial use.
+
+6.4. You shall not, nor shall You allow any other party to modify, decompile, disassemble, reverse engineer, copy, transfer, create derivative works from, rent, sub-license, distribute, reproduce framed, republish, scrape, download, display, transmit, post, lease or sell in any form or by any means, in whole or in part, use for any purpose other than for using the Website or the Services pursuant to the Terms or otherwise exploit any of the contents of the Website without our explicit, prior written permission.
+
+7. Limitation of liability
+7.1. We cannot be held liable for loss or damage which results from the non-performance or improper performance of these Terms which is attributable to (i) You or (ii) the unforeseeable and insurmountable act of a third party to the agreement or (iii) a force majeure event.
+
+7.2. Nothing in these terms is meant to exclude or limit our liability to You where it would be unlawful to do so, notably in case of:
+
+(i) Death or personal injury resulting from our negligence,
+
+(ii) Fraud or fraudulent misrepresentation, and
+
+(iii) any other liability that cannot be excluded or limited under French law
+
+7.3. Without derogating from the generality of the foregoing, We assume no liability or responsibility for any any bugs, viruses, Trojan horses, or the like which may be transmitted to or through the Website or the Services by any third party, unless we are at fault.
+
+7.4. We use our best efforts to ensure that the Website is free from errors, mistakes or inaccuracies of any content. Should such errors, mistakes or inaccuracies occur, We will remedy them without delay.
+
+7.5. You agree to hold Us harmless for any losses caused to any other third party, with respect to the Website and/or the Services which results from You breaching these Terms.
+
+7.6. We are not responsible for any problems or technical malfunction of any telephone or network lines, computer online systems, servers or providers, hardware, software, failure due to technical problems or traffic congestion on the internet (or inaccessibility of the internet) or incompatibility between the Website or the Services and Your browser and/or other equipment. Without derogating from the generality of the above, We do not assume any responsibility or risk for Your use of the internet.
+
+8. Third party services or content
+8.1. While using the Services, You may view content or services provided by third parties, including advertisements and reviews regarding the Third-Party Platforms.
+
+8.2. We do not control, endorse or adopt such content or services, and it may not always be accurate or current.
+
+8.3. Accordingly, We recommend that You independently verify all information before relying on it, and any decisions or actions taken based upon such information are Your sole responsibility.
+
+9. Links
+9.1. The Website may contain links, content, advertisements, promotions, logos and other materials of other websites or software that are controlled or offered by third parties (the “Links”). We caution You to ensure that You understand the risks involved in using such websites, software or materials before retrieving, using, relying upon or purchasing anything via these websites or software, or based on such materials. Such Links are provided solely for Your convenience, and You agree that under no circumstances will You hold Us liable for any loss or damage caused by use of or reliance on any content, goods or services available on other websites or software.
+
+9.2. The inclusion of Links in the Website is not an endorsement, authorization, sponsorship, affiliation or any other connection between Us and these websites, software or their operators.
+
+9.3. We have not reviewed any or all of such Links and are not responsible for any of the content of the websites or software referred thereby. We caution You to ensure that You understand the risks involved in using such websites or software before retrieving, using, relying upon or purchasing anything via these websites or software. Under no circumstances will You hold Us liable for any loss or damage caused by use of or reliance on any content, goods or services available on other websites.
+
+9.4. It is Your responsibility to review the terms and the policies of such third party website, and we strongly recommend that you carefully review those prior to engaging with such third parties
+
+10. Miscellaneous
+10.1. We may amend, modify, or discontinue, from time to time, any of the Services and/or introduce new Services with effect for the future.
+
+10.2. We may modify these Terms from time to time. When We do, We will provide notice to You by publishing the most current version and revising the date at the top of this page and any modifications shall be effective immediately upon such publication. By continuing to use the Website after any changes come into effect, You are deemed to agree to the revised Terms.
+
+10.3. The User agrees that transmission of information to or from the Website does not create between any relationship that deviates from those specified in this Terms.
+
+10.4. These Terms and the Privacy Policy, as amended from time to time, constitute the only valid agreements between Us and the User, and no representation, promise, consent or undertaking, whether written or oral, that is not included in the Terms of the Privacy Policy will be binding upon the parties.
+
+10.5. No failure or delay on Our part in exercising any right, power or remedy thereunder shall operate as a waiver thereof, nor shall any single or partial exercise of any such right, power or remedy preclude any other or further exercise thereof or the exercise of any other right, power or remedy.
+
+10.6. If any provision of these Terms is held by a court of competent jurisdiction to be unenforceable under applicable law, then such provision shall be excluded from these Terms and the remainder of these Terms shall be interpreted as if such provision was so excluded and shall be enforceable in accordance with its terms; provided, however, that in such event these Terms shall be interpreted so as to give effect, to the greatest extent consistent with and permitted by applicable law, to the meaning and intention of the excluded provision as determined by such court of competent jurisdiction.
+
+10.7. We may transfer or assign any and all of Our rights and obligations hereunder to any third party provided this does not negatively affect Your rights. Furthermore, without derogating from the above, the Website and/or any of the Services may be operated by third parties. You may not transfer, assign or pledge in any manner whatsoever any of Your rights or obligations under these Terms.
+
+10.8. These terms shall be governed by French law.
+
+10.9 The exclusive place of jurisdiction for all disputes arising from or in connection with these Terms shall be the courts of the jurisdiction in which You reside.
+
+                
+                                   
+
+     
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+
+    <div class="footer-top" data-section>
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" width="50" height="50" alt="Cryptex logo">
+            Crypto
+          </a>
+
+          <h2 class="footer-title">Let's talk! 🤙</h2>
+
+          <!-- <a href="tel:+123456789101" class="footer-contact-link">+12 558 782 3451</a>
+
+          <a href="mailto:hello.cryptex@gmail.com" class="footer-contact-link">hello.cryptex@gmail.com</a>
+
+          <address class="footer-contact-link">
+            Chapman 711-2880 Nulla St. Mankato Mississippi 96522
+          </address> -->
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">Services</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Buy Crypto</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Markets</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Tranding Fee</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Affiliate Program</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Referral Program</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">API</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title">TERMS</p>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">About Cryptex</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Careers</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Business Contacts</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">Blog</a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 ImmediateCryptex <a href="#" class="copyright-link"></a>
+        </p>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js" defer></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  
+    
+  
+  
+
+
+   <!-- Histats.com  START  (aync)-->
+<script type="text/javascript">var _Hasync= _Hasync|| [];
+_Hasync.push(['Histats.start', '1,4861353,4,0,0,0,00010000']);
+_Hasync.push(['Histats.fasi', '1']);
+_Hasync.push(['Histats.track_hits', '']);
+(function() {
+var hs = document.createElement('script'); hs.type = 'text/javascript'; hs.async = true;
+hs.src = ('//s10.histats.com/js15_as.js');
+(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(hs);
+})();</script>
+<noscript><a href="/" target="_blank"><img  src="//sstatic1.histats.com/0.gif?4861353&101" alt="hit tracker" border="0"></a></noscript>
+<!-- Histats.com  END  -->
+</body>
+
+</html>
