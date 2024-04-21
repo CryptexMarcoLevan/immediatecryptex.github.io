@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <div id="header">
+        <header class="header" data-header> 
+          
+        
+          <div class="container">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styleabout.css">
+    <nav class="navbar" data-navbar>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="https://www.immediatecryptex.com/#header" class="navbar-link active" data-nav-link>Home</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="https://www.immediatecryptex.com/#market" class="navbar-link active" data-nav-link>Market Update</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="https://www.immediatecryptex.com/#instruction" class="navbar-link active" data-nav-link>Quantum AI</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="https://www.immediatecryptex.com/#sectionAbout" class="navbar-link" data-nav-link>About Cryptex</a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="https://www.immediatecryptex.com/#rgst" class="navbar-link" data-nav-link>Register Now</a>
+          </li>
+
+          
+        
+        </ul>
+      </nav>
+      <style>
+        .buton a {
+          display: inline-block;
+          padding: 10px 20px;
+          border-block-end: 1px solid var(--raisin-black);
+          background-color: blue; 
+          color: white; 
+          text-decoration: none;
+          border-radius: 5px;
+          
+        }
+        .buton a:hover{
+            background: red;
+    
+          }
+      </style>
+      <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+          </div>
+        </header>
+    </div>
+      <main>
+<article>
+
+<section id ="sectionAbout" class="section about" aria-label="about" data-section>
+    <div class="container">
+
+      
+
+      <div class="about-content">
+
+        <h2 class="h2 section-title">TERMS AND CONDITIONS</h2>
+
+        <p class="section-text" id="Terms and Conditions">
+          
+        </p>
+
+        <p class="section-text" id="Privacy Policy">
+          
+        </p>
+
+        <p class="section-text" id="Cookie Policy">
+          
+        </p>
+
+       
+
+        <a href="#rgst" class="btn btn-primary">Register now</a>
+
+      </div>
+
+    </div>
+  </section>
+
+
+
+
+<footer class="footer">
+
+    <div class="footer-top" data-section>
+      <div class="container">
+
+        <div class="footer-brand">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/logo.svg" width="50" height="50" alt="Cryptex logo">
+           Immediate Cryptex
+          </a>
+
+          <h2 class="footer-title"></h2>
+
+          <!-- <a href="tel:+123456789101" class="footer-contact-link">+12 558 782 3451</a>
+
+          <a href="mailto:hello.cryptex@gmail.com" class="footer-contact-link">hello.cryptex@gmail.com</a>
+
+          <address class="footer-contact-link">
+            Chapman 711-2880 Nulla St. Mankato Mississippi 96522
+          </address> -->
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <p class="footer-list-title"></p>
+          </li>
+
+          
+          <li>
+            <a href="#" class="footer-link">TERMS AND CONDITIONS</a>
+          </li>
+
+          <li>
+            <a href="#" class="footer-link">PRIVACY POLICY</a>
+          </li>
+          
+          <li>
+            <a href="#" class="footer-link">COOKIE POLICY</a>
+          </li>
+                    
+    </div>
+
+    <div class="footer-bottom">
+      <div class="container">
+
+        <p class="copyright">
+          &copy; 2024 ImmediateCryptex <a href="#" class="copyright-link"></a>
+        </p>
+
+  </footer>
+</article>
+</main>
+
+  <script>
+    'use strict';
+
+
+
+/**
+ * add event on element
+ */
+
+const addEventOnElem = function (elem, type, callback) {
+  if (elem.length > 1) {
+    for (let i = 0; i < elem.length; i++) {
+      elem[i].addEventListener(type, callback);
+    }
+  } else {
+    elem.addEventListener(type, callback);
+  }
+}
+
+
+
+/**
+ * navbar toggle
+ */
+
+const navbar = document.querySelector("[data-navbar]");
+const navbarLinks = document.querySelectorAll("[data-nav-link]");
+const navToggler = document.querySelector("[data-nav-toggler]");
+
+const toggleNavbar = function () {
+  navbar.classList.toggle("active");
+  navToggler.classList.toggle("active");
+  document.body.classList.toggle("active");
+}
+
+addEventOnElem(navToggler, "click", toggleNavbar);
+
+const closeNavbar = function () {
+  navbar.classList.remove("active");
+  navToggler.classList.remove("active");
+  document.body.classList.remove("active");
+}
+
+addEventOnElem(navbarLinks, "click", closeNavbar);
+
+
+
+/**
+ * header active
+ */
+
+const header = document.querySelector("[data-header]");
+
+const activeHeader = function () {
+  if (window.scrollY > 300) {
+    header.classList.add("active");
+  } else {
+    header.classList.remove("active");
+  }
+}
+
+addEventOnElem(window, "scroll", activeHeader);
+
+
+
+/**
+ * toggle active on add to fav
+ */
+
+const addToFavBtns = document.querySelectorAll("[data-add-to-fav]");
+
+const toggleActive = function () {
+  this.classList.toggle("active");
+}
+
+addEventOnElem(addToFavBtns, "click", toggleActive);
+
+
+
+/**
+ * scroll revreal effect
+ */
+
+const sections = document.querySelectorAll("[data-section]");
+
+const scrollReveal = function () {
+  for (let i = 0; i < sections.length; i++) {
+    if (sections[i].getBoundingClientRect().top < window.innerHeight / 1.5) {
+      sections[i].classList.add("active");
+    } else {
+      sections[i].classList.remove("active");
+    }
+  }
+}
+
+scrollReveal();
+
+addEventOnElem(window, "scroll", scrollReveal);
+</script>
+</body>
+
+
+</html>
